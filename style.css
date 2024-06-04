@@ -5,7 +5,7 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-nav {
+/* nav {
     height: 100%;
     width: 120px;
     background: rgb(0, 45, 66);
@@ -14,22 +14,21 @@ nav {
     justify-content: space-between;
     font-size: medium;
     text-align:center!important;
-    /* align-items: center;
-    padding: 0rem calc((100vw - 1300px)/2); */
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px)/2);
+} */
+
+body {
+    background: #1b5b6b;
 }
 
-.home-about-button .google-scholar-button .contact-button {
-    padding: 8px 16px;
-    float: left;
-    width: auto;
-    border: none;
-    display: block;
-    outline: 0
+.w3-sidebar {
+    width: 120px;
+    background: #082864;
 }
 
-.home-about-button:hover .google-scholar-button:hover .contact-button:hover {
-    color:#000!important;
-    background-color:#ccc!important
+#main {
+    margin-left: 120px;
 }
 
 /* .logo {
@@ -46,7 +45,7 @@ nav a {
     padding: 0 1.5rem;
 } */
 
-.hero {
+/* .hero {
     background: rgba(35, 180, 206, 0.342);
 }
 
@@ -58,10 +57,10 @@ nav a {
 }
 
 .title h1 {
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: center; */
-    /* align-items: flex-start; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
     color: rgb(255, 255, 255);
     padding: 0 2rem;
     margin-bottom: 1rem;
@@ -72,7 +71,7 @@ nav a {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     line-height: 1.5;
-}
+} */
 
 /* .column-left h1 {
     margin-bottom: 1rem;
