@@ -23,12 +23,33 @@ body {
 }
 
 .w3-sidebar {
-    width: 120px;
-    background: #082864;
+    width: 80px;
+    align-items: center;
+    /* background: #082864; */
 }
 
 #main {
-    margin-left: 120px;
+    margin-left: 80px;
+}
+
+#main #home #title-image {
+    width: 25%;
+    height: 25%;
+}
+
+#main #home h1 {
+    color: white;
+    font-size: x-large;
+}
+
+#main #about p {
+    color: white;
+    font-size: medium;
+}
+
+#main #about a {
+    color: rgb(208, 243, 252);
+    font-size: medium;
 }
 
 /* .logo {
@@ -106,13 +127,8 @@ button:hover {
     padding: 0rem 2rem;
 } */
 
-.hero-image {
-    width: 100%;
-    height: 100%;
-}
-
 @media screen and (max-width: 768px){
-    .hero-container {
+    #main {
         grid-template-columns: 1fr;
     }
 }
