@@ -6,15 +6,33 @@
 }
 
 nav {
-    height: 80px;
-    background: cadetblue;
-    display: flex;
+    height: 100%;
+    width: 120px;
+    background: rgb(0, 45, 66);
+    position: fixed!important;
+    display: block;
     justify-content: space-between;
-    align-items: center;
-    padding: 0rem calc((100vw - 1300px)/2);
+    font-size: medium;
+    text-align:center!important;
+    /* align-items: center;
+    padding: 0rem calc((100vw - 1300px)/2); */
 }
 
-.logo {
+.home-about-button .google-scholar-button .contact-button {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.home-about-button:hover .google-scholar-button:hover .contact-button:hover {
+    color:#000!important;
+    background-color:#ccc!important
+}
+
+/* .logo {
     color: #000;
     font-size: 1.5rem;
     font-weight: bold;
@@ -26,10 +44,10 @@ nav a {
     text-decoration: none;
     color: #987;
     padding: 0 1.5rem;
-}
+} */
 
 .hero {
-    background: coral;
+    background: rgba(35, 180, 206, 0.342);
 }
 
 .hero-container {
@@ -39,27 +57,35 @@ nav a {
     padding: 3rem calc((100vw - 1300px)/2);
 }
 
-.column-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    color: aquamarine;
+.title h1 {
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: flex-start; */
+    color: rgb(255, 255, 255);
     padding: 0 2rem;
-}
-
-.column-left h1 {
     margin-bottom: 1rem;
     font-size: 3rem;
 }
 
-.column-left p {
+.about p {
     margin-bottom: 2rem;
     font-size: 1.5rem;
     line-height: 1.5;
 }
 
-button {
+/* .column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+} */
+
+/* .column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+} */
+
+/* button {
     padding: 1rem 3rem;
     font-size: 1rem;
     border: none;
@@ -79,7 +105,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     padding: 0rem 2rem;
-}
+} */
 
 .hero-image {
     width: 100%;
