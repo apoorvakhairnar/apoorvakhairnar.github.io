@@ -25,6 +25,7 @@ body {
 .w3-sidebar {
     width: 80px;
     align-items: center;
+    vertical-align: middle;
     /* background: #082864; */
 }
 
@@ -37,8 +38,7 @@ body {
 #main #title-image {
     width: 15%;
     height: 15%;
-    display: block;
-    margin-left: auto;
+    float: right;
 }
 
 #main #home h1 {
@@ -143,6 +143,7 @@ button:hover {
 
 @media screen and (max-width: 768px){
     #main {
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
+        margin-left: 0
     }
 }
