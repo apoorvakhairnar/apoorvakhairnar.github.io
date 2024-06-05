@@ -29,15 +29,16 @@ body {
 }
 
 #main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
     margin-left: 80px;
 }
 
 #main #title-image {
     width: 15%;
     height: 15%;
-    padding: 0rem 2rem;
+    display: block;
+    margin-left: auto;
 }
 
 #main #home h1 {
@@ -53,6 +54,7 @@ body {
     display: flex;
     align-content: flex-start;
     justify-content: center;
+    clear: right;
 }
 
 #main #about a {
@@ -61,6 +63,7 @@ body {
     display: flex;
     align-content: flex-start;
     justify-content: center;
+    clear: right;
 }
 
 /* .logo {
