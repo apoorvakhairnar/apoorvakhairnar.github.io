@@ -6,6 +6,7 @@
 
 head title {
     color: midnightblue;
+    font-size: 100px;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
     background-color: midnightblue;
     overflow-x: hidden;
     padding: 15% 0;
+    font-size: 50px;
 }
 
 
@@ -47,6 +49,7 @@ body {
     padding-left: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    font-size: 50px;
 }
 
 .content a {
