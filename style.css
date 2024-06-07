@@ -16,14 +16,14 @@ body {
 /* Style the side navigation */
 .sidenav {
     height: 100%;
-    width: 120px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
     background-color: navy;
     overflow-x: hidden;
-    padding: 25% 0;
+    padding: 15% 0;
 }
 
 
@@ -43,7 +43,7 @@ body {
 
 /* Style the content */
 .content {
-    margin-left: 120px;
+    margin-left: 250px;
     padding-left: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -53,10 +53,12 @@ body {
     color:blue;
 }
 
+.content profile-photo {
+    justify-content: center;
+}
+
 .content img {
-    width: 50%;
-    height: 50%;
-    border-radius: 50px;
+    border-radius: 100px;
 }
 
 .buttons {
