@@ -49,6 +49,12 @@ body {
     color:blue;
 }
 
+.content img {
+    width: 50%;
+    height: 50%;
+    border-radius: 50px;
+}
+
 .buttons {
 	margin-left: 130px;
   	padding-left: 20px;
