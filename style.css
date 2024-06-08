@@ -63,10 +63,10 @@ body {
 }
 
 .content img {
+    padding-left: 50px;
     width: 50%;
     height: auto;
     border-radius: 150px;
-    padding-left: 20px;
 }
 
 .buttons {
