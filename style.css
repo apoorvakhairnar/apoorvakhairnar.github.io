@@ -64,7 +64,7 @@ body {
 
 .content img {
     width: 50%;
-    height: 75%;
+    height: auto;
     border-radius: 150px;
 }
 
