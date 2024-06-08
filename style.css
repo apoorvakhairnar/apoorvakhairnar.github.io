@@ -9,8 +9,8 @@ body {
     background-color: #0a0f22;
 }
 
-/* Style the side navigation for desktop*/
-.sidenav_desktop {
+/* Style the side navigation */
+.sidenav {
     height: 100%;
     width: 250px;
     position: fixed;
@@ -25,7 +25,7 @@ body {
 }
 
 /* Side navigation links */
-.sidenav_desktop a {
+.sidenav a {
     color: #bac7cc;
     padding: 16px;
     text-decoration: none;
@@ -33,42 +33,13 @@ body {
 }
 
 /* Change color on hover */
-.sidenav_desktop a:hover {
+.sidenav a:hover {
     background-color: #bac7cc;
     color: #1d2233;
 }
 
-/* Style the side navigation for mobile*/
-/* .nav_mobile {
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #0a0f22;
-    overflow-x: hidden;
-    padding: 15% 0;
-    font-size: 20px;
-    text-align: center;
-} */
-
-/* Side navigation links */
-/* .nav_mobile a {
-    color: #bac7cc;
-    padding: 16px;
-    text-decoration: none;
-    display: flex;
-} */
-
-/* Change color on hover */
-/* .nav_mobile a:hover {
-    background-color: #bac7cc;
-    color: #1d2233;
-} */
-
-/* Style the content for desktop*/
-.content_desktop {
+/* Style the content */
+.content {
     margin-left: 250px;
     padding-left: 20px;
     padding-top: 125px;
@@ -79,16 +50,16 @@ body {
     color: #bac7cc;
 }
 
-.content_desktop a {
+.content a {
     color: #56b2bb;
 }
 
-.content_desktop h1 {
+.content h1 {
     color: #f0f4f8;
     font-size: 50px;
 }
 
-.content_desktop img {
+.content img {
     margin-left: 50px;
     margin-top: 75px;
     width: 50%;
@@ -96,35 +67,6 @@ body {
     border-radius: 150px;
 }
 
-/* Style the content for mobile*/
-/* .content_mobile {
-    margin-top: 50px;
-    padding-left: 10px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    font-size: 20px;
-    justify-content: center;
-    color: #bac7cc;
-}
-
-.content_mobile a {
-    color: #56b2bb;
-}
-
-.content_mobile h1 {
-    color: #f0f4f8;
-    font-size: 50px;
-}
-
-.content_mobile img {
-    margin-left: 20px;
-    margin-top: 20px;
-    width: 50%;
-    height: auto;
-    border-radius: 150px;
-} */
-
-/* Style contact buttons */
 .buttons {
 	margin-left: 250px;
   	padding-left: 20px;
@@ -161,30 +103,8 @@ body {
     color: #1d2233;
 }
 
-@media screen and (min-width: 768px){
-    /* .nav_mobile {
-        display: none;
-    } */
-
+@media screen and (max-width: 768px){
     .content_desktop {
         grid-template-columns: 1fr;
     }
-
-    /* .content_mobile {
-        display: none;
-    } */
 }
-
-/* @media screen and (max-device-width: 480px){
-    .nav_mobile {
-        display: block;
-    }
-
-    .content_desktop {
-        display: none;
-    }
-
-    .content_mobile {
-        display: block;
-    }
-} */
