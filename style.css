@@ -105,6 +105,7 @@ body {
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
     .content {
-        grid-template-columns: 1fr 1fr;
+        display: block;
+        /* grid-template-columns: 1fr 1fr; */
     }
 }
