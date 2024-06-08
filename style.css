@@ -112,7 +112,7 @@ body {
     cursor: pointer;
     border-radius: 10px;
     text-align: center;
-    width: 100px;
+    width: 50%;
 }
 
 .buttons_desktop .button a {
