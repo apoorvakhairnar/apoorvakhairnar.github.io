@@ -95,6 +95,7 @@ body {
     border-radius: 50%;
 }
 
+/* Style buttons for desktop */
 .buttons_desktop {
 	margin-left: 250px;
   	padding-left: 20px;
@@ -131,6 +132,42 @@ body {
     color: #1d2233;
 }
 
+/* Style buttons for mobile */
+.buttons_mobile {
+	margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttons_mobile .button {
+    padding: 10px 15px;
+    font-size: 15px;
+    border: 2px solid #56b2bb;
+    color: #56b2bb;;
+    background: #0a0f22;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    width: 100px;
+}
+
+.buttons_mobile .button a {
+    color: #56b2bb;
+}
+
+.buttons_mobile .button:hover {
+    border: none;
+    background: #f0f4f8;
+    color: #1d2233;
+}
+
+.buttons_mobile .button:hover a {
+    border: none;
+    background: #f0f4f8;
+    color: #1d2233;
+}
+
 @media screen and (min-width: 768px) and (orientation: landscape) {
     .sidenav {
         display: block;
@@ -145,6 +182,10 @@ body {
 
     .buttons_desktop {
         display: flex;
+    }
+
+    .buttons_mobile {
+        display: none;
     }
 }
 
@@ -162,5 +203,9 @@ body {
 
     .buttons_desktop {
         display: none;
+    }
+
+    .buttons_mobile {
+        display: flex;
     }
 }
