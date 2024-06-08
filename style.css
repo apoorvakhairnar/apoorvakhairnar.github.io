@@ -67,6 +67,34 @@ body {
     border-radius: 50%;
 }
 
+/* Style the content for mobile */
+.content_mobile {
+    padding-left: 10px;
+    padding-top: 50px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    font-size: 20px;
+    justify-content: center;
+    color: #bac7cc;
+}
+
+.content_mobile a {
+    color: #56b2bb;
+}
+
+.content_mobile h1 {
+    color: #f0f4f8;
+    font-size: 50px;
+}
+
+.content_mobile img {
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
 .buttons {
 	margin-left: 250px;
   	padding-left: 20px;
@@ -118,13 +146,13 @@ body {
 
 @media screen and (max-width: 768px) {
     .sidenav {
-        display: block;
+        display: none;
     }
     .content {
         display: none;
     }
 
     .content_mobile {
-        display: block;
+        grid-template-rows: 1fr 1fr;
     }
 }
