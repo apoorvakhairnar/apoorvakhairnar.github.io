@@ -62,7 +62,7 @@ body {
     justify-content: center;
 }
 
-.content profile-photo img {
+.content img {
     width: 50%;
     height: 75%;
     border-radius: 150px;
