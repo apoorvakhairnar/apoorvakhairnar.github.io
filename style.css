@@ -4,11 +4,6 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-head title {
-    color: midnightblue;
-    font-size: 50px;
-}
-
 body {
     margin: 0;
     background-color: white;
@@ -56,6 +51,11 @@ body {
 
 .content a {
     color:blue;
+}
+
+.content h1 {
+    color: midnightblue;
+    font-size: 50px;
 }
 
 /* .content profile-photo {
