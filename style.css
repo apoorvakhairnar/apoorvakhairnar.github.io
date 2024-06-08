@@ -60,14 +60,14 @@ body {
 
 .content profile-photo {
     justify-content: center;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
 .content profile-photo img {
     width: 50%;
     height: auto;
     border-radius: 150px;
-    padding-top: 50px;
-    padding-left: 50px;
 }
 
 .buttons {
