@@ -100,7 +100,7 @@ body {
   	padding-left: 20px;
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 50%;
 }
 
 .buttons_desktop .button {
@@ -112,7 +112,7 @@ body {
     cursor: pointer;
     border-radius: 10px;
     text-align: center;
-    width: 50%;
+    width: 100px;
 }
 
 .buttons_desktop .button a {
