@@ -51,18 +51,18 @@ body {
     padding: 15% 0;
     font-size: 20px;
     text-align: center;
-}
+} */
 
 /* Side navigation links */
-.nav_mobile a {
+/* .nav_mobile a {
     color: #bac7cc;
     padding: 16px;
     text-decoration: none;
     display: flex;
-}
+} */
 
 /* Change color on hover */
-.nav_mobile a:hover {
+/* .nav_mobile a:hover {
     background-color: #bac7cc;
     color: #1d2233;
 } */
