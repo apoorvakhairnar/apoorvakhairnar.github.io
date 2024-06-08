@@ -103,8 +103,8 @@ body {
     color: #1d2233;
 }
 
-@media screen and (max-width: 768px){
-    .content_desktop {
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .content {
         grid-template-columns: 1fr;
     }
 }
