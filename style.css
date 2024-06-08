@@ -66,6 +66,8 @@ body {
     width: 50%;
     height: auto;
     border-radius: 150px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .buttons {
