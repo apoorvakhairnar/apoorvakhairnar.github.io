@@ -9,7 +9,7 @@ body {
     background-color: #0a0f22;
 }
 
-/* Style the side navigation */
+/* Style the side navigation for desktop */
 .sidenav {
     height: 100%;
     width: 250px;
@@ -34,6 +34,34 @@ body {
 
 /* Change color on hover */
 .sidenav a:hover {
+    background-color: #bac7cc;
+    color: #1d2233;
+}
+
+/* Style the side navigation for mobile */
+.nav_mobile {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0a0f22;
+    overflow-x: hidden;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Side navigation links */
+.nav_mobile a {
+    color: #bac7cc;
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+/* Change color on hover */
+.nav_mobile a:hover {
     background-color: #bac7cc;
     color: #1d2233;
 }
@@ -88,7 +116,7 @@ body {
 }
 
 .content_mobile img {
-    margin-left: auto;
+    margin-left: 5%;
     margin-top: 50px;
     width: 90%;
     height: auto;
@@ -172,6 +200,11 @@ body {
     .sidenav {
         display: block;
     }
+    
+    .nav_mobile {
+        display: none;
+    }
+
     .content {
         grid-template-columns: 1fr 1fr;
     }
@@ -193,6 +226,11 @@ body {
     .sidenav {
         display: none;
     }
+
+    .nav_mobile {
+        display: flex;
+    }
+
     .content {
         display: none;
     }
