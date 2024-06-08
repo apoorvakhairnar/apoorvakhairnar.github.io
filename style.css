@@ -63,7 +63,7 @@ body {
 } */
 
 .content img {
-    justify-items: center
+    justify-items: center;
     width: 50%;
     height: auto;
     border-radius: 150px;
