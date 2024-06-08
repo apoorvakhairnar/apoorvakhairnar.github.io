@@ -89,6 +89,7 @@ body {
 /* Style the content for mobile */
 .content_mobile {
     padding-left: 5%;
+    padding-top: 50px;
     font-size: 20px;
     text-align: left;
     justify-content: center;
