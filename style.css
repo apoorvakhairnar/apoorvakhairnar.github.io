@@ -88,7 +88,7 @@ body {
 }
 
 .content_mobile img {
-    margin-left: 20px;
+    margin-left: auto;
     margin-top: 50px;
     width: 90%;
     height: auto;
