@@ -60,13 +60,9 @@ body {
     font-size: 50px;
 }
 
-.content profile-photo {
-    margin-left: 100px;
-    margin-top: 50px;
-}
-
 .content img {
-    justify-items: center;
+    margin-left: 50px;
+    margin-top: 50px;
     width: 50%;
     height: auto;
     border-radius: 150px;
