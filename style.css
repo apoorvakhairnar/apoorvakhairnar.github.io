@@ -104,8 +104,10 @@ body {
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {
-    .content {
+    .sidenav {
         display: block;
-        /* grid-template-columns: 1fr 1fr; */
+    }
+    .content {
+        grid-template-columns: 1fr 1fr;
     }
 }
