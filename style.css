@@ -61,10 +61,12 @@ body {
     justify-content: center;
 }
 
-.content img {
+.content profile-photo img {
     width: 50%;
     height: auto;
     border-radius: 150px;
+    padding-top: 50px;
+    padding-left: 50px;
 }
 
 .buttons {
