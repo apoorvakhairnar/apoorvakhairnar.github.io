@@ -38,7 +38,7 @@ body {
     color: #1d2233;
 }
 
-/* Style the content */
+/* Style the content for desktop */
 .content {
     margin-left: 250px;
     padding-left: 20px;
@@ -113,5 +113,18 @@ body {
 
     .content_mobile {
         display: none;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .sidenav {
+        display: block;
+    }
+    .content {
+        display: none;
+    }
+
+    .content_mobile {
+        display: block;
     }
 }
