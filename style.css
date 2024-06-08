@@ -103,7 +103,7 @@ body {
     width: 400px;
 }
 
-.buttons_desktop button {
+.buttons_desktop .button {
     padding: 10px 15px;
     font-size: 15px;
     border: 2px solid #56b2bb;
@@ -115,17 +115,17 @@ body {
     width: 100px;
 }
 
-.buttons_desktop button a {
+.buttons_desktop .button a {
     color: #56b2bb;
 }
 
-.buttons_desktop button:hover {
+.buttons_desktop .button:hover {
     border: none;
     background: #f0f4f8;
     color: #1d2233;
 }
 
-.buttons_desktop button:hover a {
+.buttons_desktop .button:hover a {
     border: none;
     background: #f0f4f8;
     color: #1d2233;
