@@ -86,6 +86,30 @@ body {
     font-size: 50px;
 }
 
+.content_desktop figure {
+    border: 20px solid;
+    border-color: #1d2233;
+    border-radius: 20px;
+    background-color: #1d2233;
+    width: 250px;
+    height: 250px;
+    text-align: center
+}
+
+.content_desktop figure img {
+    width: 100%;
+}
+
+.content_desktop figure figcaption {
+    color: #f0f4f8;
+    
+}
+
+.content_desktop figure figcaption a {
+    color: #f0f4f8;
+    text-decoration: none;
+}
+
 /* Style the content for mobile */
 .content_mobile {
     padding-left: 5%;
