@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #bac7cc;
+}
+
+/* Style the side navigation for desktop */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0a0f22;
+    overflow-x: hidden;
+    padding: 15% 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+/* Side navigation links */
+.sidenav a {
+    color: #bac7cc;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+    background-color: #bac7cc;
+    color: #1d2233;
+}
+
+/* Style the side navigation for mobile */
+.nav_mobile {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0a0f22;
+    overflow-x: hidden;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Side navigation links */
+.nav_mobile a {
+    color: #bac7cc;
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+/* Change color on hover */
+.nav_mobile a:hover {
+    background-color: #bac7cc;
+    color: #1d2233;
+}
+
+/* Style the content for desktop */
+.content_desktop {
+    margin-left: 250px;
+    padding-left: 20px;
+    font-size: 20px;
+    text-align: left;
+    justify-content: center;
+    color: #1d2233;
+}
+
+.content_desktop a {
+    color: #56b2bb;
+}
+
+.content_desktop h1 {
+    color: #0a0f22;
+    font-size: 50px;
+}
+
+.content_desktop .projects .project_figure {
+    float: right; 
+    padding-left:20px; 
+    padding-top:5px;
+}
+
+.content_desktop .projects .project_figure a {
+    color: #1d2233
+}
+
+/* Style the content for mobile */
+.content_mobile {
+    padding-left: 5%;
+    padding-top: 50px;
+    font-size: 20px;
+    text-align: left;
+    justify-content: center;
+    color: #1d2233;
+}
+
+.content_mobile a {
+    color: #56b2bb;
+}
+
+.content_mobile h1 {
+    color: #0a0f22;
+    font-size: 50px;
+}
+
+
+@media screen and (min-width: 768px) and (orientation: landscape) {
+    .sidenav {
+        display: block;
+    }
+    
+    .nav_mobile {
+        display: none;
+    }
+
+    .content_desktop {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content_mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidenav {
+        display: none;
+    }
+
+    .nav_mobile {
+        display: flex;
+    }
+
+    .content_desktop {
+        display: none;
+    }
+
+    .content_mobile {
+        grid-template-rows: 1fr 1fr;
+    }
+}
