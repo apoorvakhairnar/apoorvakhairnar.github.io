@@ -12,7 +12,7 @@ body {
 /* Style the side navigation for desktop */
 .sidenav {
     height: 100%;
-    width: 250px;
+    width: 0.25*vw;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -70,8 +70,8 @@ body {
     border-color: #bac7cc;
     border-radius: 20px;
     background-color: #bac7cc;
-    width: 250px;
-    height: 250px;
+    width: 0.25*0.75*vw;
+    height: 0.33*vw;
     text-align: center
 }
 
