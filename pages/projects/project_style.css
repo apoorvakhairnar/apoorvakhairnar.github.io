@@ -41,12 +41,14 @@ body {
 
 /* Style the content for desktop */
 .content_desktop {
-    margin-left: 250px;
+    margin-left: 0.30*vw;
     padding-left: 20px;
+    padding-top: 125px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     font-size: 20px;
-    text-align: left;
     justify-content: center;
-    color: #1d2233;
+    color: #bac7cc;
 }
 
 .content_desktop a {
@@ -56,11 +58,6 @@ body {
 .content_desktop h1 {
     color: #f0f4f8;
     font-size: 50px;
-}
-
-.content_desktop p {
-    color: #bac7cc;
-    font-size: 20px;
 }
 
 /* Style the content for mobile */
