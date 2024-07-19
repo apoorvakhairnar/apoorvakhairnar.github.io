@@ -71,7 +71,7 @@ body {
     border-radius: 20px;
     background-color: #bac7cc;
     width: 0.25*0.75*vw;
-    height: 0.33*vw;
+    height: 0.33*vh;
     text-align: center
 }
 
