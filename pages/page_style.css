@@ -12,7 +12,7 @@ body {
 /* Style the side navigation for desktop */
 .sidenav {
     height: 100%;
-    width: 0.25*vw;
+    width: 0.30*vw;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -84,8 +84,8 @@ body {
 }
 
 .content_desktop figure figcaption a {
-        color: #1d2233;
-      text-decoration: none;
+    color: #1d2233;
+    text-decoration: none;
 }
 
 /* Style the content for mobile */
