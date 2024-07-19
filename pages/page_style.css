@@ -70,8 +70,8 @@ body {
     border-color: #bac7cc;
     border-radius: 20px;
     background-color: #bac7cc;
-    width: 0.25*0.75*vw;
-    height: 0.33*vw;
+    width: 500px;
+    height: 500px;
     text-align: center
 }
 
