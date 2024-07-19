@@ -41,7 +41,7 @@ body {
 
 /* Style the content for desktop */
 .content_desktop {
-    margin-left: 0.30*vw;
+    margin-left: 0.5*vw;
     padding-left: 20px;
     font-size: 20px;
     text-align: left;
