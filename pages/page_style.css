@@ -58,6 +58,13 @@ body {
     font-size: 50px;
 }
 
+.projects {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%
+}
+
 .content_desktop figure {
     border: 20px solid;
     border-color: #bac7cc;
