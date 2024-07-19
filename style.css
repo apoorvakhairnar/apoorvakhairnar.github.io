@@ -68,7 +68,7 @@ body {
 
 /* Style the content for desktop */
 .content_desktop {
-    margin-left: 0.5*vw;
+    margin-left: 200px;
     padding-left: 20px;
     padding-top: 125px;
     display: grid;
