@@ -146,7 +146,7 @@ body {
     border-color: #bac7cc;
     border-radius: 20px;
     background-color: #bac7cc;
-    width: 100%;
+    width: 0.8*vw;
     height: 0.25*vh;
     text-align: center
 }
