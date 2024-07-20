@@ -75,7 +75,6 @@ body {
 }
 
 .content_desktop figure img {
-    object-fit: contain;
     height: auto;
     width: 300px;
 }
