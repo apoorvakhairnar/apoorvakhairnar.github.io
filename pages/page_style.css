@@ -75,7 +75,8 @@ body {
 }
 
 .content_desktop figure img {
-    height: 300px
+    height: auto;
+    width: auto;
 }
 
 .content_desktop figure figcaption {
