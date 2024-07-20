@@ -77,7 +77,7 @@ body {
 .content_desktop figure img {
     object-fit: contain;
     height: auto;
-    width: auto;
+    width: 300px;
 }
 
 .content_desktop figure figcaption {
