@@ -69,8 +69,8 @@ body {
     border: 20px solid;
     border-color: #bac7cc;
     border-radius: 20px;
-    width: 600px;
-    height: 0.33*vh;
+    /* width: 600px; */
+    /* height: 0.33*vh; */
     text-align: center
 }
 
