@@ -181,6 +181,14 @@ body {
     .content_mobile {
         display: none;
     }
+
+    .buttons_desktop {
+        display: flex;
+    }
+
+    .buttons_mobile {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -198,5 +206,13 @@ body {
 
     .content_mobile {
         grid-template-rows: 1fr 1fr;
+    }
+
+    .buttons_desktop {
+        display: none;
+    }
+
+    .buttons_mobile {
+        display: flex;
     }
 }
