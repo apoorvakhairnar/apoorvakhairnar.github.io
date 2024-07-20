@@ -12,7 +12,7 @@ body {
 /* Style the side navigation for desktop */
 .sidenav {
     height: 100%;
-    width: 250px;
+    width: 0.25vw;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -41,7 +41,7 @@ body {
 
 /* Style the content for desktop */
 .content_desktop {
-    margin-left: 250px;
+    margin-left: 0.25vw;
     padding-left: 20px;
     font-size: 20px;
     text-align: left;
@@ -69,13 +69,13 @@ body {
     border: 20px solid;
     border-color: #bac7cc;
     border-radius: 20px;
-    width: 600px;
-    /* height: 0.33*vh; */
+    width: 0.1875vw;
+    height: 0.33vh;
     text-align: center
 }
 
 .content_desktop figure img {
-    width: 600px;
+    width: 100%;
 }
 
 .content_desktop figure figcaption {
