@@ -74,9 +74,9 @@ body {
     text-align: center
 }
 
-/* .content_desktop figure img {
-    width: 100%;
-} */
+.content_desktop figure img {
+    width: 600px;
+}
 
 .content_desktop figure figcaption {
     color: #1d2233; 
