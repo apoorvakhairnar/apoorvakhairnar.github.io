@@ -108,6 +108,14 @@ body {
     font-size: 50px;
 }
 
+.content_mobile img {
+    margin-left: 5%;
+    margin-top: 50px;
+    width: 90%;
+    height: auto;
+    border-radius: 50%;
+}
+
 @media screen and (min-width: 768px) and (orientation: landscape) {
     .sidenav {
         display: block;
