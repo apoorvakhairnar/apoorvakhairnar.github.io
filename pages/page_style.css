@@ -88,6 +88,34 @@ body {
     text-decoration: none;
 }
 
+/* Style the side navigation for mobile */
+.nav_mobile {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0a0f22;
+    overflow-x: hidden;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Side navigation links */
+.nav_mobile a {
+    color: #bac7cc;
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+/* Change color on hover */
+.nav_mobile a:hover {
+    background-color: #bac7cc;
+    color: #1d2233;
+}
+
 /* Style the content for mobile */
 .content_mobile {
     padding-left: 5%;
@@ -105,6 +133,36 @@ body {
 .content_mobile h1 {
     color: #0a0f22;
     font-size: 50px;
+}
+
+.projects_mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%
+}
+
+.content_mobile figure {
+    border: 20px solid;
+    border-color: #bac7cc;
+    border-radius: 20px;
+    background-color: #bac7cc;
+    width: 100%;
+    height: 0.5*vh;
+    text-align: center
+}
+
+.content_mobile figure img {
+    width: 100%;
+}
+
+.content_mobile figure figcaption {
+    color: #1d2233; 
+}
+
+.content_mobile figure figcaption a {
+    color: #1d2233;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 768px) and (orientation: landscape) {

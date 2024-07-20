@@ -38,34 +38,6 @@ body {
     color: #1d2233;
 }
 
-/* Style the side navigation for mobile */
-.nav_mobile {
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #0a0f22;
-    overflow-x: hidden;
-    font-size: 20px;
-    text-align: center;
-}
-
-/* Side navigation links */
-.nav_mobile a {
-    color: #bac7cc;
-    padding: 16px;
-    text-decoration: none;
-    display: flex;
-}
-
-/* Change color on hover */
-.nav_mobile a:hover {
-    background-color: #bac7cc;
-    color: #1d2233;
-}
-
 /* Style the content for desktop */
 .content_desktop {
     margin-left: 250px;
@@ -93,6 +65,34 @@ body {
     width: 50%;
     height: auto;
     border-radius: 50%;
+}
+
+/* Style the side navigation for mobile */
+.nav_mobile {
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0a0f22;
+    overflow-x: hidden;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Side navigation links */
+.nav_mobile a {
+    color: #bac7cc;
+    padding: 16px;
+    text-decoration: none;
+    display: flex;
+}
+
+/* Change color on hover */
+.nav_mobile a:hover {
+    background-color: #bac7cc;
+    color: #1d2233;
 }
 
 /* Style the content for mobile */
