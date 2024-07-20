@@ -134,12 +134,12 @@ body {
     font-size: 50px;
 }
 
-.projects_mobile {
+/* .projects_mobile {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%
-}
+} */
 
 .content_mobile figure {
     border: 20px solid;
