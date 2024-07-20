@@ -205,7 +205,7 @@ body {
     }
 
     .content_mobile {
-        grid-template-rows: 1fr 1fr;
+        display: flex;
     }
 
     .buttons_desktop {
