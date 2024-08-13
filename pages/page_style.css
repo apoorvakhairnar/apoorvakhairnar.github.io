@@ -59,7 +59,6 @@ body {
 }
 
 .projects {
-    padding-left: 5vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
