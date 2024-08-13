@@ -70,15 +70,15 @@ body {
     border: 20px solid;
     border-color: #bac7cc;
     border-radius: 20px;
-    width: 13vw;
-    height: 13vw;
+    width: 15vw;
+    height: 15vw;
     text-align: center;
     justify-content: center;
 }
 
 .content_desktop figure img {
     height: auto;
-    width: 11vw;
+    width: 13vw;
 }
 
 /* .content_desktop figure figcaption {
