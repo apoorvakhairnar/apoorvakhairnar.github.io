@@ -59,10 +59,12 @@ body {
 }
 
 .projects {
+    margin-left: 250px;
+    padding-left: 20px;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 80%
+    width: 100%
 }
 
 .content_desktop figure {
