@@ -78,7 +78,7 @@ body {
 .content_desktop figure img {
     height: auto;
     width: 15vw;
-    justify-items: center;
+    justify-content: center;
 }
 
 /* .content_desktop figure figcaption {
