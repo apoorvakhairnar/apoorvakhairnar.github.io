@@ -73,6 +73,7 @@ body {
     height: 16vw;
     text-align: center;
     justify-content: center;
+    color: #bac7cc;
 }
 
 .content_desktop figure img {
@@ -81,7 +82,6 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: row;
-    color: #bac7cc;
 }
 
 /* .content_desktop figure figcaption {
