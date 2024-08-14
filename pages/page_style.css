@@ -77,8 +77,10 @@ body {
 
 .content_desktop figure img {
     height: auto;
-    width: 13.8vw;
+    width: 13.5vw;
     justify-content: center;
+    display: flex;
+    flex-direction: row;
 }
 
 /* .content_desktop figure figcaption {
