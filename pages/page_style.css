@@ -81,6 +81,7 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: row;
+    color: #bac7cc;
 }
 
 /* .content_desktop figure figcaption {
