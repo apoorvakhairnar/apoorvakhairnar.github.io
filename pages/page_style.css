@@ -69,15 +69,15 @@ body {
     border: 20px solid;
     border-color: #bac7cc;
     border-radius: 20px;
-    width: 17vw;
-    height: 17vw;
+    width: 16vw;
+    height: 16vw;
     text-align: center;
     justify-content: center;
 }
 
 .content_desktop figure img {
     height: auto;
-    width: 14.5vw;
+    width: 13.8vw;
     justify-content: center;
 }
 
