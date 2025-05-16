@@ -4,24 +4,24 @@
 .content_desktop {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 2rem;
-}
-
-.profile-photo img {
-  border-radius: 50%;
-  width: 200px;
-  height: auto;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-/* Desktop buttons */
-.buttons_desktop {
-  display: flex;
-  gap: 1rem;
   justify-content: center;
-  margin-top: 1.5rem;
+  gap: 2rem;
+  max-width: 900px;
+  margin: 4rem auto;         /* top/bottom auto‐centers, 4rem padding */
+  padding: 0 1rem;
 }
+.profile-photo img {
+  width: 250px;              /* make the photo a bit bigger */
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Buttons group stays centered */
+.buttons_desktop {
+  justify-content: center;
+  margin: 2rem 0;
+}
+
 .buttons_desktop .button a {
   background: var(--color-accent);
   color: #fff;
@@ -38,14 +38,6 @@
 /* Mobile layout */
 .content_mobile { display: none; }
 .buttons_mobile   { display: none; }
-
-/* @media (max-width: 768px) {
-  .content_desktop  { display: none; }
-  .content_mobile   { display: block; padding: 1rem; }
-  .buttons_desktop  { display: none; }
-  .buttons_mobile   { display: flex; gap: 0.5rem; justify-content: center; margin-top:1.5rem; }
-  .buttons_mobile .button a:hover { background: var(--color-accent-light); }
-} */
 
 @media (max-width: 768px) {
   .content_desktop { display: none; }

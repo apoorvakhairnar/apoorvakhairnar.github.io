@@ -6,6 +6,26 @@
   --color-muted: #666666;
 }
 
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+/* let <main> grow, push footer to bottom */
+main.container {
+  flex: 1;
+}
+footer.container {
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
 /* Resets & Base */
 * {
   box-sizing: border-box;
@@ -44,7 +64,7 @@ a:hover {
 /* Sidebar (desktop) */
 .sidenav {
   position: fixed; top: 0; left: 0;
-  width: 15vw; height: 100vh;
+  width: 12vw;; height: 100vh;
   background: var(--color-bg);
   padding-top: 15%;
   text-align: center;
@@ -55,6 +75,8 @@ a:hover {
   color: var(--color-text);
   padding: 1rem 0;
   transition: background .2s;
+  font-size: 1.2rem;         /* larger text */
+  font-weight: 600;          /* bold */
 }
 .sidenav a:hover {
   background: var(--color-text);
@@ -74,6 +96,8 @@ a:hover {
   color: var(--color-text);
   line-height: 50px;
   padding: 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 .nav_mobile a:hover {
   background: var(--color-text);

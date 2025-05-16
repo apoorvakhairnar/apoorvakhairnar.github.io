@@ -1,34 +1,44 @@
+/* assets/css/project_style.css */
+/* —————————————————————————————————————————————
+   Individual Project Detail Pages
+————————————————————————————————————————————— */
+
+/* 1) Pull in global vars, resets, nav, typography */
 @import 'style.css';
 
-/* Desktop detail layout */
+/* 2) Desktop detail layout */
 .content_desktop {
-  margin-left: 15vw;  /* space for sidebar */
-  padding: 2rem 1rem;
-  max-width: 800px;
+  /* leave room for sidebar and center content */
+  margin-top: 4rem;
+  margin-right: auto;
+  margin-left: 15vw;
+  max-width: 900px;
+  display: flex;
+  align-items: flex-start;    /* top-align text */
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
 }
 
-/* Text styling */
-.content_desktop h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-}
-.content_desktop p {
-  color: var(--color-text);
-  line-height: 1.6;
-  margin-bottom: 1rem;
-}
-.content_desktop a {
-  color: var(--color-accent);
-  transition: filter .2s;
-}
-.content_desktop a:hover {
-  filter: brightness(1.2);
+/* 3) Text column */
+.content_desktop .about {
+  flex: 1 1 400px;
 }
 
-/* Mobile detail layout */
+/* 4) Image column */
+.content_desktop .profile-photo img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* 5) Mobile detail layout (stacked) */
 .content_mobile {
   display: none;
   padding: 1rem;
+  margin-top: 60px;           /* push below mobile nav */
 }
 @media (max-width: 768px) {
   .content_desktop { display: none; }
