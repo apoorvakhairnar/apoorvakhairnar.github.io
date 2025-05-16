@@ -1,47 +1,148 @@
-/* home_style.css */
+/* ==================================================
+   home_style.css — Homepage “about + photo” & buttons
+   ================================================== */
 
-/* Desktop layout */
+@import 'style.css';
+
+/* 1) Desktop content grid */
 .content_desktop {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-left: 15vw;         /* leave room for sidebar */
+  padding-top: 125px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  max-width: 900px;
-  margin: 4rem auto;         /* top/bottom auto‐centers, 4rem padding */
-  padding: 0 1rem;
+  justify-content: center;
+  font-size: 20px;
+  color: var(--color-text);
 }
-.profile-photo img {
-  width: 250px;              /* make the photo a bit bigger */
+
+/* 2) Headline & paragraph styling */
+.content_desktop h1 {
+  color: var(--color-accent-light);
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+.content_desktop p {
+  margin-bottom: 1.5rem;
+}
+
+/* 3) Links in text */
+.content_desktop a {
+  color: var(--color-accent);
+}
+
+/* 4) Profile photo */
+.content_desktop .profile-photo img {
+  width: 50%;
   height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  margin-top: 75px;
+  justify-self: end;
+}
+
+/* 5) Desktop buttons */
+.buttons_desktop {
+  margin-left: 250px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+.buttons_desktop .button {
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  background: var(--color-bg);
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: 100px;
+  transition: background 0.2s, color 0.2s;
+}
+.buttons_desktop .button a {
+  color: var(--color-accent);
+}
+.buttons_desktop .button:hover {
+  background: var(--color-accent-light);
+  color: var(--color-bg);
+}
+.buttons_desktop .button:hover a {
+  color: var(--color-bg);
+}
+
+/* 6) Mobile layout */
+.content_mobile {
+  padding-left: 2.5%;
+  padding-top: 50px;
+  display: none;
+  grid-template-rows: 1fr 1fr;
+  font-size: 20px;
+  justify-content: center;
+  color: var(--color-text);
+}
+.content_mobile h1 {
+  color: var(--color-accent-light);
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+.content_mobile a {
+  color: var(--color-accent);
+}
+.content_mobile img {
+  margin-left: 5%;
+  margin-top: 50px;
+  width: 90%;
+  height: auto;
+  border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* Buttons group stays centered */
-.buttons_desktop {
-  justify-content: center;
-  margin: 2rem 0;
+/* 7) Mobile buttons */
+.buttons_mobile {
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1.5rem 0;
 }
-
-.buttons_desktop .button a {
-  background: var(--color-accent);
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  transition: background 0.2s;
-  text-decoration: none;
+.buttons_mobile .button {
+  padding: 10px 15px;
+  font-size: 15px;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  background: var(--color-bg);
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100px;
+  transition: background 0.2s, color 0.2s;
 }
-.buttons_desktop .button a:hover {
+.buttons_mobile .button a {
+  color: var(--color-accent);
+}
+.buttons_mobile .button:hover {
   background: var(--color-accent-light);
+  color: var(--color-bg);
+}
+.buttons_mobile .button:hover a {
+  color: var(--color-bg);
 }
 
-/* Mobile layout */
-.content_mobile { display: none; }
-.buttons_mobile   { display: none; }
+/* 8) Media queries */
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  .sidenav        { display: block; }
+  .nav_mobile     { display: none; }
+  .content_desktop { display: grid; }
+  .content_mobile  { display: none; }
+  .buttons_desktop { display: flex; }
+  .buttons_mobile  { display: none; }
+}
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  .sidenav         { display: none; }
+  .nav_mobile      { display: flex; }
   .content_desktop { display: none; }
-  .content_mobile  { display: block; }
+  .content_mobile  { display: grid; }
   .buttons_desktop { display: none; }
   .buttons_mobile  { display: flex; }
 }

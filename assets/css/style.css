@@ -1,11 +1,26 @@
+/* ==============================================
+   style.css — Global variables, resets, nav, footer
+   ============================================== */
+
+/* 1) Color & font variables */
 :root {
-  --color-bg: #0a0f22;
-  --color-text: #bac7cc;
-  --color-accent: #56b2bb;
-  --color-accent-light: #e8f0fe;
-  --color-muted: #666666;
+  --color-bg:            #0a0f22;
+  --color-text:          #bac7cc;
+  --color-accent:        #56b2bb;
+  --color-accent-light:  #f0f4f8;
+  --color-muted:         #666666;
+
+  --font-sans: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande',
+               'Lucida Sans',Arial,sans-serif;
 }
 
+/* 2) Resets & base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-sans);
+}
 html {
   height: 100%;
 }
@@ -13,58 +28,31 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-color: var(--color-bg);
+  background: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
-}
-/* let <main> grow, push footer to bottom */
-main.container {
-  flex: 1;
-}
-footer.container {
-  text-align: center;
-  padding: 1.5rem 0;
 }
 
-/* Resets & Base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family:
-    'Trebuchet MS','Lucida Sans Unicode','Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
-}
-body {
-  background-color: var(--color-bg);
-  color: var(--color-text);
-  line-height: 1.6;
-}
-/* Typography */
-h1 { font-size: 2.5rem; margin-bottom: .5em; }
-h2 { font-size: 2rem;   margin-bottom: .75em; }
-h3 { font-size: 1.5rem; margin-bottom: .75em; }
-p  { margin-bottom: 1em; color: var(--color-text); }
-/* Links */
-a {
-  color: var(--color-accent);
-  text-decoration: none;
-  transition: color .2s;
-}
-a:hover {
-  color: var(--color-accent-light);
-}
-/* Utility Container */
-.container {
+/* 3) Main & footer for sticky-footer layout */
+main.container {
+  flex: 1;
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem;
 }
+footer.container {
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+}
 
-/* Sidebar (desktop) */
+/* 4) Sidebar (desktop) */
 .sidenav {
-  position: fixed; top: 0; left: 0;
-  width: 12vw;; height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  width: 12vw;
+  height: 100vh;
   background: var(--color-bg);
   padding-top: 15%;
   text-align: center;
@@ -73,20 +61,22 @@ a:hover {
 .sidenav a {
   display: block;
   color: var(--color-text);
-  padding: 1rem 0;
-  transition: background .2s;
-  font-size: 1.2rem;         /* larger text */
-  font-weight: 600;          /* bold */
+  padding: 16px 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
 }
 .sidenav a:hover {
   background: var(--color-text);
   color: var(--color-bg);
 }
 
-/* Mobile Nav */
+/* 5) Mobile top nav */
 .nav_mobile {
   display: none;
-  position: fixed; top: 0; left: 0;
+  position: fixed;
+  top: 0; left: 0;
   width: 100%; height: 50px;
   background: var(--color-bg);
   text-align: center;
@@ -94,24 +84,23 @@ a:hover {
 }
 .nav_mobile a {
   color: var(--color-text);
-  line-height: 50px;
   padding: 0 1rem;
+  line-height: 50px;
   font-size: 1.1rem;
   font-weight: 600;
+  text-decoration: none;
 }
 .nav_mobile a:hover {
   background: var(--color-text);
   color: var(--color-bg);
 }
 
-/* Show/Hide content zones */
-.content_mobile {
-  display: none;
-  padding-top: 60px; /* below mobile nav */
+/* 6) Global link style */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.2s;
 }
-@media (max-width: 768px) {
-  .sidenav { display: none; }
-  .nav_mobile { display: block; }
-  .content_desktop { display: none; }
-  .content_mobile { display: block; }
+a:hover {
+  color: var(--color-accent-light);
 }
