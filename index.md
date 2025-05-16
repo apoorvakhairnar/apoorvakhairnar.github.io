@@ -1,10 +1,9 @@
 ---
 layout: default
-title: Home
-extra_css: 
-    - home_style.css
+title:  Home
+extra_css:
+  - home_style.css
 ---
-
 <!-- Page content for desktop -->
 <div class="content_desktop">
   <div class="about">
