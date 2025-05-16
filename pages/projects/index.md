@@ -5,7 +5,6 @@ permalink: /pages/projects/
 extra_css: /assets/css/page_style.css
 ---
 
-{% raw %}
 <!-- copy the full projects.html body -->
 <div class="content_desktop">
     <div class="projects">
@@ -113,4 +112,3 @@ extra_css: /assets/css/page_style.css
         </figure>
     </div>
 </div>
-{% endraw %}
