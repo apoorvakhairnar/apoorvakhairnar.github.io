@@ -10,11 +10,11 @@ extra_css:
 <div class="content_desktop">
     <div class="projects">
         <figure>
-            <a href="{{ '/pages/projects/SSSR-Final/' | relative_url }/' | relative_url }}"><img src="{{ '/pages/projects/assets/SSSR-Final.jpg' | relative_url }}"></a>
+            <a href="{{ '/pages/projects/SSSR-Final/' | relative_url }}"><img src="{{ '/pages/projects/assets/SSSR-Final.jpg' | relative_url }}"></a>
             <!-- <figcaption><a href="{{ '/pages/projects/NPR-STAR.html">Non-Pyrotechnic Recovery System for High-Powered Rockets</a></figcaption> -->
         </figure>
         <figure>
-            <a href="{{ '/pages/projects/MPC-Final/' | relative_url }/' | relative_url }}"><img src="{{ '/pages/projects/assets/MPC-Final.jpg' | relative_url }}"></a>
+            <a href="{{ '/pages/projects/MPC-Final/' | relative_url }}"><img src="{{ '/pages/projects/assets/MPC-Final.jpg' | relative_url }}"></a>
             <!-- <figcaption><a href="{{ '/pages/projects/NPR-STAR.html">Non-Pyrotechnic Recovery System for High-Powered Rockets</a></figcaption> -->
         </figure>
         <figure>
