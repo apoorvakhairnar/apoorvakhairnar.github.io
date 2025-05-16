@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Nonlinear Tracking Control of 4-DOF Kinova Arm
+title: Review of RoboBee: Harvard's insect-sized Biomimetic Robot
 permalink: /pages/projects/RoboBee-Review/
 extra_css:
   - project_style.css

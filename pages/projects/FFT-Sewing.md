@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Nonlinear Tracking Control of 4-DOF Kinova Arm
+title: FFT Analysis of Vibration Signals from Traditional Sewing Machine
 permalink: /pages/projects/FFT-Sewing/
 extra_css:
   - project_style.css

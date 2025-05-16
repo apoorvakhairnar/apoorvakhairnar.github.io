@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Nonlinear Tracking Control of 4-DOF Kinova Arm
+title: Analysis and Synthesis of Four bar mechanism - Watt's linkage
 permalink: /pages/projects/ASM-Watts/
 extra_css:
   - project_style.css

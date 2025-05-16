@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Nonlinear Tracking Control of 4-DOF Kinova Arm
+title: The Rising Role of Artificial Intelligence in Inventory Management
 permalink: /pages/projects/AI-Inventory/
 extra_css:
   - project_style.css

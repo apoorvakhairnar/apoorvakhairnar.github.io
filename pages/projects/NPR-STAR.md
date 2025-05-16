@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Nonlinear Tracking Control of 4-DOF Kinova Arm
+title: Non-Pyrotechnic Recovery System for High-Powered Rockets
 permalink: /pages/projects/NPR-STAR/
 extra_css:
   - project_style.css

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Nonlinear Tracking Control of 4-DOF Kinova Arm
+title: Study of "A Numerical Model for Design and Optimization of Surface Textures for Tilting Pad Thrust Bearings"
 permalink: /pages/projects/NMCP/
 extra_css:
   - project_style.css

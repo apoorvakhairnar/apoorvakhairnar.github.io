@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Nonlinear Tracking Control of 4-DOF Kinova Arm
+title: Static Test Pad for Rocket Motors
 permalink: /pages/projects/STP-STAR/
 extra_css:
   - project_style.css

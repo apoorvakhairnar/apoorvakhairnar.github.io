@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Nonlinear Tracking Control of 4-DOF Kinova Arm
+title: Measuring the Circumference of the Earth
 permalink: /pages/projects/GSF/
 extra_css:
   - project_style.css

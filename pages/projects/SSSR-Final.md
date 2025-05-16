@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Nonlinear Tracking Control of 4-DOF Kinova Arm
+title: Kirigami Vacuum Jamming Gripper
 permalink: /pages/projects/SSSR-Final/
 extra_css:
   - project_style.css

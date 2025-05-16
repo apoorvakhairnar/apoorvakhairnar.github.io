@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Nonlinear Tracking Control of 4-DOF Kinova Arm
+title: Model Predictive Tracking Control of Unmanned Ground Vehicle
 permalink: /pages/projects/MPC-Final/
 extra_css:
   - project_style.css
