@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Study of "A Numerical Model for Design and Optimization of Surface Textures for Tilting Pad Thrust Bearings"
+title: Study of 'A Numerical Model for Design and Optimization of Surface Textures for Tilting Pad Thrust Bearings'
 date: 2019-10-15        # the date the project was done
 image: "/assets/projects/NMCP.jpg"
 permalink: /pages/projects/NMCP/
