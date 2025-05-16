@@ -8,6 +8,10 @@ extra_css:
   - project_style.css
 ---
 
+# Sliding-Mode Control for Soft Robots: A Review
+
+![Sliding-Mode Control for Soft Robots: A Review](/assets/projects/NST-Final.jpg)
+
 As a part of the final evaluation of the Nonlinear Systems Theory course offered at <a href="https://vt.edu">Virginia Tech</a> (VT), a survey of Sliding Mode Control technique
 for soft robots was conducted. This project was conducted under the guidance of 
 <a href="https://scholar.google.com/citations?user=yRvv6IgAAAAJ&hl=en">Dr. Craig Woolsey</a> from the Department of Aerospace and Ocean Engineering at VT.
