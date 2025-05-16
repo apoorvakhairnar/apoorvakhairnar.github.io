@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Kirigami Vacuum Jamming Gripper
-date: 2023-05-05        # the date the project was done
+date: 2024-05-05        # the date the project was done
 image: "/assets/projects/SSSR-Final.jpg"
 permalink: /pages/projects/SSSR-Final/
 extra_css:

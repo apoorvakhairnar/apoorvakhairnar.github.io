@@ -5,28 +5,27 @@ extra_css:
   - page_style.css
 ---
 <div class="content_desktop">
-    <div class="projects">
+  <div class="projects">
     {% assign sorted = site.projects | sort: 'date' | reverse %}
     {% for proj in sorted %}
-        <figure>
+      <figure>
         <a href="{{ proj.url | relative_url }}">
-            <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}">
+          <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}">
         </a>
-        <figcaption><a href="{{ proj.url | relative_url }}">{{ proj.title }}</a></figcaption>
-        </figure>
+      </figure>
     {% endfor %}
-    </div>
+  </div>
 </div>
+
 <div class="content_mobile">
-    <div class="projects_mobile">
+  <div class="projects_mobile">
     {% assign sorted = site.projects | sort: 'date' | reverse %}
     {% for proj in sorted %}
-        <figure>
+      <figure>
         <a href="{{ proj.url | relative_url }}">
-            <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}">
+          <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}">
         </a>
-        <figcaption><a href="{{ proj.url | relative_url }}">{{ proj.title }}</a></figcaption>
-        </figure>
+      </figure>
     {% endfor %}
-    </div>
+  </div>
 </div>
