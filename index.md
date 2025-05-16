@@ -8,10 +8,10 @@ title: Home
   <div class="about">
     <h1>Apoorva Khairnar</h1>
     <p>
-      Hi! I am Apoorva, a Ph.D. student at the Department of...anical Engineering, <a href="https://vt.edu">Virginia Tech</a>. 
-      I completed my Bachelor's in Mechanical Engineering (2...nological Univeristy</a> (formerly College of Engineering Pune).
-      Currently, I am working as a Graduate Research Assista...e/faculty/naughton-noel.html">Dr. Noel Naughton</a>. My research
-      focuses on the control of soft robots such as octopus ...l reservoir computers to enable embedded sensing in soft robots.
+      Hi! I am Apoorva, a Ph.D. student at the Department of Mechanical Engineering, <a href="https://vt.edu">Virginia Tech</a>. 
+      I completed my Bachelor's in Mechanical Engineering (2021) with Honors in Thermal Engineering from <a href="https://www.coep.org.in/">COEP Technological Univeristy</a> (formerly College of Engineering Pune).
+      Currently, I am working as a Graduate Research Assistant at the <a href="https://naughtonlab.org/">Biomechanical Systems Lab</a> at VT under the guidance of <a href="https://me.vt.edu/people/faculty/naughton-noel.html">Dr. Noel Naughton</a>. My research
+      focuses on the control of soft robots such as octopus arms and snakes using Neuromorphic Computing. Additionally, my work involves integrating artificial and physical reservoir computers to enable embedded sensing in soft robots.
     </p>
   </div>
   <div class="profile-photo">
@@ -24,10 +24,10 @@ title: Home
   <div class="about">
     <h1>Apoorva Khairnar</h1>
     <p>
-      Hi! I am Apoorva, a Ph.D. student at the Department of...anical Engineering, <a href="https://vt.edu">Virginia Tech</a>. 
-      I completed my Bachelor's in Mechanical Engineering (2...nological Univeristy</a> (formerly College of Engineering Pune).
-      Currently, I am working as a Graduate Research Assista...e/faculty/naughton-noel.html">Dr. Noel Naughton</a>. My research
-      focuses on the control of soft robots such as octopus ...l reservoir computers to enable embedded sensing in soft robots.
+      Hi! I am Apoorva, a Ph.D. student at the Department of Mechanical Engineering, <a href="https://vt.edu">Virginia Tech</a>. 
+      I completed my Bachelor's in Mechanical Engineering (2021) with Honors in Thermal Engineering from <a href="https://www.coep.org.in/">COEP Technological Univeristy</a> (formerly College of Engineering Pune).
+      Currently, I am working as a Graduate Research Assistant at the <a href="https://naughtonlab.org/">Biomechanical Systems Lab</a> at VT under the guidance of <a href="https://me.vt.edu/people/faculty/naughton-noel.html">Dr. Noel Naughton</a>. My research
+      focuses on the control of soft robots such as octopus arms and snakes using Neuromorphic Computing. Additionally, my work involves integrating artificial and physical reservoir computers to enable embedded sensing in soft robots.
     </p>
   </div>
   <div class="profile-photo">
