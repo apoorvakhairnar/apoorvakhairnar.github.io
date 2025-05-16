@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Home
+extra_css: 
+    - home_style.css
 ---
 
 <!-- Page content for desktop -->

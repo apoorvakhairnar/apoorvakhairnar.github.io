@@ -3,27 +3,35 @@
 <head>
   {% seo %}
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>{{ page.title }} | {{ site.title }}</title>
-  <!-- merge your CSS files under assets/css -->
+
+  <!-- Core styles for every page -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- Page-specific styles, e.g. home_style.css, page_style.css, project_style.css -->
   {% if page.extra_css %}
     {% for sheet in page.extra_css %}
-        <link rel="stylesheet"
+      <link rel="stylesheet"
             href="{{ '/assets/css/' | append: sheet | relative_url }}">
     {% endfor %}
   {% endif %}
+
+  <!-- Favicon -->
   <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
 </head>
 <body>
   <header>
-    <!-- copy your .sidenav/nav_mobile HTML here -->
     {% include nav.html %}
   </header>
-  <main>
+
+  <main class="container">
     {{ content }}
   </main>
-  <footer>
+
+  <footer class="container">
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
   </footer>
 </body>
