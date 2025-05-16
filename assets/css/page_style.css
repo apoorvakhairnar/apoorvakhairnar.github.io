@@ -1,215 +1,80 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+@import 'style.css';
+
+/* Projects Grid (desktop) */
+.content_desktop .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
 }
 
-body {
-    margin: 0;
-    background-color: #0a0f22;
+/* Card styling */
+.content_desktop .projects figure {
+  border: 2px solid var(--color-muted);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.content_desktop .projects figure:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.content_desktop .projects img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-/* Style the side navigation for desktop */
-.sidenav {
-    height: 100%;
-    width: 15vw;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #0a0f22;
-    overflow-x: hidden;
-    padding: 15% 0;
-    font-size: 20px;
-    text-align: center;
+/* Button pills */
+.buttons_desktop {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.buttons_desktop .button a {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #fff;
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: filter 0.2s;
+}
+.buttons_desktop .button a:hover {
+  filter: brightness(1.1);
 }
 
-
-/* Side navigation links */
-.sidenav a {
-    color: #bac7cc;
-    padding: 16px;
-    text-decoration: none;
+/* Mobile breakpoints */
+@media (max-width: 768px) {
+  /* Swap home layout */
+  .content_desktop { display: none; }
+  .content_mobile {
     display: block;
-}
+    padding: 1rem;
+  }
 
-/* Change color on hover */
-.sidenav a:hover {
-    background-color: #bac7cc;
-    color: #1d2233;
-}
-
-/* Style the content for desktop */
-.content_desktop {
-    margin-left: 15vw;
-    padding-left: 20px;
-    font-size: 20px;
-    text-align: left;
-    justify-content: center;
-    color: #1d2233;
-}
-
-.content_desktop a {
-    color: #56b2bb;
-}
-
-.content_desktop h1 {
-    color: #0a0f22;
-    font-size: 50px;
-}
-
-.projects {
+  /* Buttons */
+  .buttons_desktop { display: none; }
+  .buttons_mobile {
     display: flex;
-    flex-direction: row;
+    gap: 0.5rem;
     justify-content: center;
-    width: 100%;
-}
+    margin: 1.5rem 0;
+  }
+  .buttons_mobile .button a:hover {
+    filter: brightness(1.1);
+  }
 
-.content_desktop figure {
-    border: 20px solid;
-    border-color: #bac7cc;
-    border-radius: 20px;
-    width: 16vw;
-    height: 16vw;
-    text-align: center;
-    justify-content: center;
-    background-color: #bac7cc;
-}
-
-.content_desktop figure img {
-    height: auto;
-    width: 13.5vw;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-}
-
-/* .content_desktop figure figcaption {
-    color: #1d2233; 
-}
-
-.content_desktop figure figcaption a {
-    color: #1d2233;
-    text-decoration: none;
-} */
-
-/* Style the side navigation for mobile */
-.nav_mobile {
-    height: 50px;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #0a0f22;
-    overflow-x: hidden;
-    font-size: 20px;
-    text-align: center;
-}
-
-/* Side navigation links */
-.nav_mobile a {
-    color: #bac7cc;
-    padding: 16px;
-    text-decoration: none;
-    display: flex;
-}
-
-/* Change color on hover */
-.nav_mobile a:hover {
-    background-color: #bac7cc;
-    color: #1d2233;
-}
-
-/* Style the content for mobile */
-.content_mobile {
-    padding-top: 50px;
-    font-size: 15px;
-    text-align: left;
-    justify-content: center;
-    color: #1d2233;
-}
-
-.content_mobile a {
-    color: #56b2bb;
-}
-
-.content_mobile h1 {
-    color: #0a0f22;
-    font-size: 50px;
-}
-
-.content_mobile figure {
-    border: 20px solid;
-    border-color: #bac7cc;
-    border-radius: 20px;
-    background-color: #bac7cc;
-    width: 250px;
-    height: 0.25*vh;
-    text-align: center
-}
-
-.content_mobile figure img {
-    width: 100%;
-}
-
-.content_mobile figure figcaption {
-    color: #1d2233; 
-}
-
-.content_mobile figure figcaption a {
-    color: #1d2233;
-    text-decoration: none;
-}
-
-@media screen and (min-width: 768px) and (orientation: landscape) {
-    .sidenav {
-        display: block;
-    }
-    
-    .nav_mobile {
-        display: none;
-    }
-
-    .content_desktop {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .content_mobile {
-        display: none;
-    }
-
-    .buttons_desktop {
-        display: flex;
-    }
-
-    .buttons_mobile {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .sidenav {
-        display: none;
-    }
-
-    .nav_mobile {
-        display: flex;
-    }
-
-    .content_desktop {
-        display: none;
-    }
-
-    .content_mobile {
-        display: flex;
-    }
-
-    .buttons_desktop {
-        display: none;
-    }
-
-    .buttons_mobile {
-        display: flex;
-    }
+  /* Projects Grid (mobile) */
+  .content_mobile .projects_mobile {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .content_mobile .projects_mobile figure:hover {
+    transform: translateY(-4px);
+  }
 }
