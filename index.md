@@ -18,7 +18,7 @@ title: Home
         </p>
       </div>
       <div class="profile-photo">
-        <img src="/assets/apoorva2.jpg" alt="apoorvakhairnar">
+        <img src="/assets/images/apoorva2.jpg" alt="apoorvakhairnar">
       </div>
     </div>
     <!-- Page content for mobile -->
@@ -33,7 +33,7 @@ title: Home
         </p>
       </div>
       <div class="profile-photo">
-        <img src="/assets/apoorva2.jpg" alt="apoorvakhairnar">
+        <img src="/assets/images/apoorva2.jpg" alt="apoorvakhairnar">
       </div>
     </div>
     <!-- Buttons for desktop -->
