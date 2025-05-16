@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "Sliding Mode Control for Soft Robots: A Review"
+title: "Sliding-Mode Control for Soft Robots: A Review"
 date: 2023-12-09
 image: "/assets/projects/NST-Final.jpg"
 permalink: /pages/projects/NST-Final/
@@ -8,4 +8,13 @@ extra_css:
   - project_style.css
 ---
 
-Biology has traditionally been inspiring the field of robotics and aiding the development of ever-more capable robots. However, the incorporation of such flexible motions in rigid-bodied robots is a challenging and costly endeavor. This challenge has driven the necessity for soft robots capable of exhibiting complex, flexible maneuvers while adapting to their surroundings. However, the modeling and control of these robots poses substantial challenges compared to their rigid counterparts. Thus, this paper presents a comprehensive survey of a Lyapunov-based nonlinear control technique across various selected models of a soft robot. As Sliding Mode Control (SMC) is well-known for its robustness against uncertainties and adaptability to highly nonlinear systems, this paper focuses on the various implementations of SMC for the control of soft robot models such as the Piecewise Constant Curvature and the Cosserat Rod Theory. Additionally, this paper also focuses on two distinctive applications of SMC for robot-specific dynamic models. Further, it comprehensively compares the merits, drawbacks, and key features of these algorithms while highlighting the future scope of control technologies in soft robotic systems.
+As a part of the final evaluation of the Nonlinear Systems Theory course offered at <a href="https://vt.edu">Virginia Tech</a> (VT), a survey of Sliding Mode Control technique
+for soft robots was conducted. This project was conducted under the guidance of 
+<a href="https://scholar.google.com/citations?user=yRvv6IgAAAAJ&hl=en">Dr. Craig Woolsey</a> from the Department of Aerospace and Ocean Engineering at VT.
+
+The goal was to review existing Lyapunov-based nonlinear contorl techniques for soft robots and since Sliding Mode Control is well-known for its robustness against uncertainties
+and adaptability  to highly nonlinear systems, this project focused on various implementations of SMC for control of soft robots. Piecewise Constant Curvature and 
+Cosserat Rod models were some of the models used in these SMC implementations. The project also included two robot-specific dynamic models for osft robots. The paper
+comprehensively compared the merits, drawbacks, and key features of these algorithms while highlighting the future scopt of control techniques for soft robots.
+
+The survey paper will be uploaded on ResearchGate shortly.
