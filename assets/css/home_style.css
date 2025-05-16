@@ -1,86 +1,120 @@
 /* assets/css/home_style.css */
-/* ==============================================
-   Homepage “about + photo” centered & pill buttons
-   ============================================== */
+/* —————————————————————————————————————————————
+   Homepage two-column grid exactly as before
+————————————————————————————————————————————— */
 @import 'style.css';
 
-/* 1) Wider two-column grid: 2fr text, 1fr image */
+/* Desktop “about + photo” grid */
 .content_desktop {
-  margin-left: 15vw; /* sidebar width */
-  margin-top: 4rem;
-  margin-right: auto;
-  /* span full width minus sidebar and gap */
-  max-width: calc(100% - 15vw - 4rem);
+  margin-left: 12vw;          /* keep sidebar space */
+  padding-left: 20px;
+  padding-top: 125px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  align-items: start;
+  font-size: 20px;
   color: var(--color-text);
 }
 
-/* 2) Text block */
-.content_desktop .about {
-  font-size: 1rem;
-  line-height: 1.6;
+/* Headline & text */
+.content_desktop h1 {
+  color: var(--color-accent-light);
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+.content_desktop p {
+  margin-bottom: 1.5rem;
+}
+.content_desktop a {
+  color: var(--color-accent);
 }
 
-/* 3) Larger profile photo */
+/* Photo circle */
 .content_desktop .profile-photo img {
-  width: 100%;
-  max-width: 300px;
+  margin-left: 50px;
+  margin-top: 75px;
+  width: 50%;
   height: auto;
   border-radius: 50%;
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  justify-self: end;
 }
 
-/* 4) Pill-style buttons in a row */
+/* Pills style buttons */
 .buttons_desktop {
+  margin-left: 250px;
+  padding-left: 20px;
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
+  width: auto;
 }
 .buttons_desktop .button a {
-  display: inline-block;
   background: var(--color-accent);
   color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  transition: background 0.2s ease-in-out;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  transition: background 0.2s;
   text-decoration: none;
 }
 .buttons_desktop .button a:hover {
   background: var(--color-accent-light);
+  color: var(--color-bg);
 }
 
-/* 5) Mobile fallback: stack under nav */
+/* Mobile fallback */
+.content_mobile {
+  display: none;
+  padding-left: 2.5%;
+  padding-top: 50px;
+  font-size: 20px;
+  color: var(--color-text);
+}
+.content_mobile h1 {
+  color: var(--color-accent-light);
+  font-size: 50px;
+  margin-bottom: 1rem;
+}
+.content_mobile img {
+  margin-left: 5%;
+  margin-top: 50px;
+  width: 90%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Mobile buttons */
+.buttons_mobile {
+  display: none;
+  gap: 0.75rem;
+  flex-direction: column;
+  margin: 1.5rem 0;
+}
+.buttons_mobile .button a {
+  background: var(--color-accent);
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: background 0.2s;
+  text-decoration: none;
+}
+.buttons_mobile .button a:hover {
+  background: var(--color-accent-light);
+  color: var(--color-bg);
+}
+
+/* Breakpoints */
+@media (min-width: 768px) {
+  .nav_mobile { display: none; }
+  .content_mobile, .buttons_mobile { display: none; }
+}
 @media (max-width: 768px) {
-  .content_desktop { display: none; }
-  .content_mobile {
-    display: block;
-    padding: 1rem;
-    margin-top: 2rem;
-  }
-  .buttons_desktop { display: none; }
-  .buttons_mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    align-items: start;
-    margin: 1.5rem 0;
-  }
-  .buttons_mobile .button a {
-    background: var(--color-accent);
-    color: #fff;
-    padding: 0.6rem 1.2rem;
-    border-radius: 9999px;
-    font-weight: 600;
-    transition: background 0.2s ease-in-out;
-    text-decoration: none;
-    display: inline-block;
-  }
-  .buttons_mobile .button a:hover {
-    background: var(--color-accent-light);
-  }
+  .sidenav { display: none; }
+  .nav_mobile { display: flex; }
+  .content_desktop, .buttons_desktop { display: none; }
+  .content_mobile, .buttons_mobile { display: block; }
 }
