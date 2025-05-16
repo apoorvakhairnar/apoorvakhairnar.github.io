@@ -6,7 +6,7 @@
 
 /* 1) Desktop “about + photo” grid */
 .content_desktop {
-  margin-left: 12vw;         /* sidebar space */
+  margin-left: 15vw;         /* sidebar space */
   padding-top: 125px;
   display: grid;
   grid-template-columns: 1fr 1fr;

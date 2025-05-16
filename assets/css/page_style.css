@@ -7,6 +7,7 @@
 
 /* 2) Desktop grid of thumbnails */
 .content_desktop .projects {
+  margin-left: 15vw;         /* sidebar space */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
   gap: 1.5rem;
