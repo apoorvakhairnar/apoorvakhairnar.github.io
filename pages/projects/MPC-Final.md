@@ -5,7 +5,7 @@ permalink: /pages/projects/MPC-Final/
 extra_css:
   - project_style.css
 ---
-{% raw %}
+
 <!-- paste the body from MPC-Final.html here -->
 <div class="content_desktop">
     <div class="projects">
@@ -42,4 +42,3 @@ extra_css:
         <img src="assets/NPR-STAR.png">
     </div> -->
 </div>
-{% endraw %}

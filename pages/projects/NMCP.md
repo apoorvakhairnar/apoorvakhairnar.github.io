@@ -5,7 +5,7 @@ permalink: /pages/projects/NMCP/
 extra_css:
   - project_style.css
 ---
-{% raw %}
+
 <!-- paste the body from NMCP.html here -->
 <div class="content_desktop">
     <div class="projects">
@@ -36,5 +36,5 @@ extra_css:
         </p>
     </div>
 </div>
-{% endraw %}
+
 

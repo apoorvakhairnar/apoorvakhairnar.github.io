@@ -5,7 +5,7 @@ permalink: /pages/projects/FFT-Sewing/
 extra_css:
   - project_style.css
 ---
-{% raw %}
+
 <div class="content_desktop">
     <div class="projects">
         <h1>FFT Analysis of Vibration Signals from Traditional Sewing Machine</h1>
@@ -45,4 +45,3 @@ extra_css:
         <img src="assets/FFT-Sewing.jpg">
     </div> -->
 </div>
-{% endraw %}

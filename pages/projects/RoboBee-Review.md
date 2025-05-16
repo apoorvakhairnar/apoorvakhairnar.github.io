@@ -5,7 +5,7 @@ permalink: /pages/projects/RoboBee-Review/
 extra_css:
   - project_style.css
 ---
-{% raw %}
+
 <!-- paste the body from RoboBee-Review.html here -->
 <div class="content_desktop">
     <div class="projects">
@@ -42,4 +42,3 @@ extra_css:
         <img src="assets/RoboBee-Review.jpg">
     </div> -->
 </div>
-{% endraw %}

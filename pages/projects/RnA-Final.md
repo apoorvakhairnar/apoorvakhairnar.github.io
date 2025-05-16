@@ -5,7 +5,7 @@ permalink: /pages/projects/RnA-Final/
 extra_css:
   - project_style.css
 ---
-{% raw %}
+
 <!-- paste the body from RnA-Final.html here -->
 <div class="content_desktop">
     <div class="content_desktop">
@@ -43,4 +43,3 @@ extra_css:
             <img src="assets/NPR-STAR.png">
         </div> -->
     </div>
-{% endraw %}

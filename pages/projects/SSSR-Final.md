@@ -5,7 +5,7 @@ permalink: /pages/projects/SSSR-Final/
 extra_css:
   - project_style.css
 ---
-{% raw %}
+
 <!-- paste the body from SSSR-Final.html here -->
 <div class="content_desktop">
     <div class="projects">
@@ -45,4 +45,3 @@ extra_css:
         <img src="assets/NPR-STAR.png">
     </div> -->
 </div>
-{% endraw %}

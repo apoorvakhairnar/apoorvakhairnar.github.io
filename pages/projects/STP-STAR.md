@@ -5,7 +5,7 @@ permalink: /pages/projects/STP-STAR/
 extra_css:
   - project_style.css
 ---
-{% raw %}
+
 <!-- paste the body from STP-STAR.html here -->
 <div class="content_desktop">
     <div class="projects">
@@ -48,4 +48,3 @@ extra_css:
         <img src="assets/NPR-STAR.png">
     </div> -->
 </div>
-{% endraw %}

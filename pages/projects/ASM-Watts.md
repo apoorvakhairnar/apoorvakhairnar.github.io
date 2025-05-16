@@ -5,7 +5,7 @@ permalink: /pages/projects/ASM-Watts/
 extra_css:
   - project_style.css
 ---
-{% raw %}
+
 <!-- paste the body from ASM-Watts.html here -->
 <div class="content_desktop">
     <div class="projects">
@@ -40,4 +40,3 @@ extra_css:
         </p>
     </div>
 </div>
-{% endraw %}

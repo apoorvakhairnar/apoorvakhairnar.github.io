@@ -5,7 +5,7 @@ permalink: /pages/projects/GSF/
 extra_css:
   - project_style.css
 ---
-{% raw %}
+
 <!-- paste the body from GSF.html here -->
 <div class="content_desktop">
     <div class="projects">
@@ -36,4 +36,3 @@ extra_css:
         <img src="assets/NPR-STAR.png">
     </div> -->
 </div>
-{% endraw %}

@@ -5,7 +5,7 @@ permalink: /pages/projects/AI-Inventory/
 extra_css:
   - project_style.css
 ---
-{% raw %}
+
 <!-- paste the body from AI-Inventory.html here -->
 <div class="content_desktop">
     <div class="projects">
@@ -46,4 +46,3 @@ extra_css:
         </p>
     </div>
 </div>
-{% endraw %}
