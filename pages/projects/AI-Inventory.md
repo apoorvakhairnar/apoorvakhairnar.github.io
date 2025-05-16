@@ -2,6 +2,8 @@
 layout: default
 title: Nonlinear Tracking Control of 4-DOF Kinova Arm
 permalink: /pages/projects/AI-Inventory/
+extra_css:
+  - project_style.css
 ---
 {% raw %}
 <!-- paste the body from AI-Inventory.html here -->

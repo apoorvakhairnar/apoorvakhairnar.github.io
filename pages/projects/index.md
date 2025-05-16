@@ -2,6 +2,8 @@
 layout: default
 title: Projects
 permalink: /pages/projects/
+extra_css:
+  - page_style.css
 ---
 
 <div class="content_desktop">

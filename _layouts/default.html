@@ -7,8 +7,12 @@
   <title>{{ page.title }} | {{ site.title }}</title>
   <!-- merge your CSS files under assets/css -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/page_style.css' | relative_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/project_style.css' | relative_url }}">
+  {% if page.extra_css %}
+    {% for sheet in page.extra_css %}
+        <link rel="stylesheet"
+            href="{{ '/assets/css/' | append: sheet | relative_url }}">
+    {% endfor %}
+  {% endif %}
   <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}">
 </head>
 <body>

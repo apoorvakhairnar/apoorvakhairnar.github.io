@@ -2,6 +2,8 @@
 layout: default
 title: Nonlinear Tracking Control of 4-DOF Kinova Arm
 permalink: /pages/projects/SSSR-Final/
+extra_css:
+  - project_style.css
 ---
 {% raw %}
 <!-- paste the body from SSSR-Final.html here -->

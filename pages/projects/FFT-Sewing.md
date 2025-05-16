@@ -2,6 +2,8 @@
 layout: default
 title: Nonlinear Tracking Control of 4-DOF Kinova Arm
 permalink: /pages/projects/FFT-Sewing/
+extra_css:
+  - project_style.css
 ---
 {% raw %}
 <div class="content_desktop">
