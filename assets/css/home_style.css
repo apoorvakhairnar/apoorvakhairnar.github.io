@@ -4,34 +4,18 @@
 ————————————————————————————————————————————— */
 @import 'style.css';
 
-/* Desktop “about + photo” grid */
+/* 1) Desktop “about + photo” grid */
 .content_desktop {
-  margin-left: 12vw;          /* sidebar */
+  margin-left: 12vw;         /* sidebar space */
   padding-top: 125px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  align-items: center;        /* ← NEW: vertically center text + image */
-  font-size: 20px;
-  color: var(--color-text);
+  align-items: center;       /* vertical centering */
 }
 
-/* Headline & text */
-.content_desktop h1 {
-  color: var(--color-accent-light);
-  font-size: 50px;
-  margin-bottom: 1rem;
-}
-.content_desktop p {
-  margin-bottom: 1.5rem;
-}
-.content_desktop a {
-  color: var(--color-accent);
-}
-
-/* Photo circle */
+/* 2) Photo circle */
 .content_desktop .profile-photo img {
-  /* remove margin-top */
   margin-left: 50px;
   width: 50%;
   height: auto;
@@ -39,53 +23,33 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.15);
 }
 
-/* Pills style buttons */
+/* 3) Pill-style buttons */
 .buttons_desktop {
   margin-left: 250px;
-  padding-left: 20px;
   display: flex;
   gap: 1rem;
-  width: auto;
 }
 .buttons_desktop .button a {
   background: var(--color-accent);
   color: #fff;
   padding: 10px 15px;
-  font-size: 15px;
-  border-radius: 10px;
-  text-align: center;
-  display: inline-block;
-  transition: background 0.2s;
+  font-size: 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
   text-decoration: none;
+  transition: background 0.2s;
 }
 .buttons_desktop .button a:hover {
   background: var(--color-accent-light);
   color: var(--color-bg);
 }
 
-/* Mobile fallback */
+/* 4) Mobile fallback: stacked under nav */
 .content_mobile {
   display: none;
-  padding-left: 2.5%;
-  padding-top: 50px;
-  font-size: 20px;
-  color: var(--color-text);
+  padding: 1rem;
+  margin-top: 2rem;
 }
-.content_mobile h1 {
-  color: var(--color-accent-light);
-  font-size: 50px;
-  margin-bottom: 1rem;
-}
-.content_mobile img {
-  margin-left: 5%;
-  margin-top: 50px;
-  width: 90%;
-  height: auto;
-  border-radius: 50%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-
-/* Mobile buttons */
 .buttons_mobile {
   display: none;
   gap: 0.75rem;
@@ -96,25 +60,19 @@
   background: var(--color-accent);
   color: #fff;
   padding: 10px 15px;
-  font-size: 15px;
-  border-radius: 10px;
-  display: inline-block;
-  transition: background 0.2s;
+  font-size: 1rem;
+  border-radius: 9999px;
+  font-weight: 600;
   text-decoration: none;
+  transition: background 0.2s;
 }
 .buttons_mobile .button a:hover {
   background: var(--color-accent-light);
   color: var(--color-bg);
 }
 
-/* Breakpoints */
-@media (min-width: 768px) {
-  .nav_mobile { display: none; }
-  .content_mobile, .buttons_mobile { display: none; }
-}
+/* 5) Breakpoints */
 @media (max-width: 768px) {
-  .sidenav { display: none; }
-  .nav_mobile { display: flex; }
   .content_desktop, .buttons_desktop { display: none; }
-  .content_mobile, .buttons_mobile { display: block; }
+  .content_mobile,  .buttons_mobile  { display: block; }
 }

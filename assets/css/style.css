@@ -1,7 +1,3 @@
-/* ==============================================
-   style.css — Global variables, resets, nav, footer
-   ============================================== */
-
 /* 1) Color & font variables */
 :root {
   --color-bg:            #0a0f22;
@@ -10,8 +6,9 @@
   --color-accent-light:  #f0f4f8;
   --color-muted:         #666666;
 
-  --font-sans: 'Trebuchet MS','Lucida Sans Unicode','Lucida Grande',
-               'Lucida Sans',Arial,sans-serif;
+  --font-sans:   'Trebuchet MS','Lucida Sans Unicode',
+                 'Lucida Grande','Lucida Sans',Arial,sans-serif;
+  --font-serif:  'Merriweather','Georgia','Times New Roman',serif;
 }
 
 /* 2) Resets & base */
@@ -21,9 +18,7 @@
   padding: 0;
   font-family: var(--font-sans);
 }
-html {
-  height: 100%;
-}
+html { height: 100%; }
 body {
   display: flex;
   flex-direction: column;
@@ -33,12 +28,12 @@ body {
   line-height: 1.6;
 }
 
-/* utilities & sticky footer */
+/* 3) Sticky-footer layout */
 main.container {
-  flex: 1;           /* push footer down */
-  width: 100%;       /* full width */
-  margin: 0;         /* no auto-centering */
-  padding: 0;        /* handled per-page */
+  flex: 1;           /* pushes footer to bottom */
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 footer.container {
   text-align: center;
@@ -49,10 +44,8 @@ footer.container {
 
 /* 4) Sidebar (desktop) */
 .sidenav {
-  position: fixed;
-  top: 0; left: 0;
-  width: 12vw;
-  height: 100vh;
+  position: fixed; top: 0; left: 0;
+  width: 12vw; height: 100vh;
   background: var(--color-bg);
   padding-top: 15%;
   text-align: center;
@@ -75,8 +68,7 @@ footer.container {
 /* 5) Mobile top nav */
 .nav_mobile {
   display: none;
-  position: fixed;
-  top: 0; left: 0;
+  position: fixed; top: 0; left: 0;
   width: 100%; height: 50px;
   background: var(--color-bg);
   text-align: center;
@@ -103,4 +95,28 @@ a {
 }
 a:hover {
   color: var(--color-accent-light);
+}
+
+/* 7) Shared typography */
+h1, h2, h3, h4 {
+  font-family: var(--font-serif);
+  color: var(--color-accent-light);
+  margin-bottom: 0.5em;
+}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+p  {
+  font-size: 1rem;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+}
+
+/* 8) Show/hide nav + content zones */
+@media (max-width: 768px) {
+  .sidenav             { display: none; }
+  .nav_mobile          { display: block; }
+}
+@media (min-width: 768px) {
+  .nav_mobile          { display: none; }
 }

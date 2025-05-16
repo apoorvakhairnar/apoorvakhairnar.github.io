@@ -1,6 +1,11 @@
 @import 'style.css';
 
-/* Desktop grid */
+/* 1) Hide mobile grid on desktop */
+.content_mobile .projects_mobile {
+  display: none;
+}
+
+/* 2) Desktop grid of thumbnails */
 .content_desktop .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
@@ -8,16 +13,32 @@
   padding: 2rem 1rem;
 }
 
-/* Mobile grid */
+/* 3) Card styling (desktop) */
+.content_desktop .projects figure {
+  border: 2px solid var(--color-muted);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.content_desktop .projects figure:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.content_desktop .projects img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 4) Mobile grid of thumbnails */
 .content_mobile .projects_mobile {
-  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px,1fr));
   gap: 1rem;
   padding: 1rem 0;
 }
 
-/* Card style for desktop & mobile */
-.content_desktop .projects figure,
+/* 5) Card styling (mobile) */
 .content_mobile .projects_mobile figure {
   border: 2px solid var(--color-muted);
   border-radius: 8px;
@@ -25,14 +46,18 @@
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   transition: transform .2s ease, box-shadow .2s ease;
 }
-.content_desktop .projects figure:hover,
 .content_mobile .projects_mobile figure:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-.content_desktop .projects img,
 .content_mobile .projects_mobile img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* 6) Swap to mobile grid under 768px */
+@media (max-width: 768px) {
+  .content_desktop .projects             { display: none; }
+  .content_mobile .projects_mobile       { display: grid; }
 }
