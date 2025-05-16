@@ -1,6 +1,6 @@
 @import 'style.css';
 
-/* Desktop grid of thumbnails */
+/* Desktop grid */
 .content_desktop .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
@@ -8,7 +8,7 @@
   padding: 2rem 1rem;
 }
 
-/* Mobile grid of thumbnails */
+/* Mobile grid */
 .content_mobile .projects_mobile {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px,1fr));

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Review of RoboBee: Harvard's insect-sized Biomimetic Robot
+title: Review of RoboBee - Harvard's insect-sized Biomimetic Robot
 permalink: /pages/projects/RoboBee-Review/
 extra_css:
   - project_style.css
