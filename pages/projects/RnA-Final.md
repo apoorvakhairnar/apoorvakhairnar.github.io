@@ -1,26 +1,11 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Apoorva Khairnar: Projects</title>
-    <link rel="stylesheet" href="project_style.css">
-    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
-  </head>
-  <body>
-    <!-- Sidebar -->
-    <nav class="sidenav">
-        <a href="https://apoorvakhairnar.github.io">Home</a>
-        <a href="https://scholar.google.com/citations?user=SeCzgwsAAAAJ&hl=en">Publications</a>
-        <a href="https://apoorvakhairnar.github.io/pages/projects">Projects</a>
-    </nav>
-    <!-- Nav bar for mobile -->
-    <nav class="nav_mobile">
-        <a href="https://apoorvakhairnar.github.io">Home</a>
-        <a href="https://scholar.google.com/citations?user=SeCzgwsAAAAJ&hl=en">Publications</a>
-        <a href="https://apoorvakhairnar.github.io/pages/projects">Projects</a>
-    </nav>
-    <!-- Page content for desktop-->
+---
+layout: default
+title: Nonlinear Tracking Control of 4-DOF Kinova Arm
+permalink: /pages/projects/RnA-Final/
+---
+{% raw %}
+<!-- paste the body from RnA-Final.html here -->
+<div class="content_desktop">
     <div class="content_desktop">
         <div class="projects">
             <h1>Nonlinear Tracknig Control of 4-DOF Kinova arm using 3 Algorithms</h1>
@@ -56,5 +41,4 @@
             <img src="assets/NPR-STAR.png">
         </div> -->
     </div>
-  </body>
-</html>
+{% endraw %}

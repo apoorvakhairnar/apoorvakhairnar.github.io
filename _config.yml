@@ -1,0 +1,14 @@
+title: "Apoorva Khairnar"
+description: "PhD Candidate in Mechanical Engineering at Virginia Tech researching soft robotics, reservoir computing, and autonomous systems."
+url: "https://apoorvakhairnar.github.io"
+baseurl: ""
+author:
+  name: "Apoorva Khairnar"
+  email: "apoorvak@vt.edu"
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+markdown: kramdown
+kramdown:
+  input: GFM
