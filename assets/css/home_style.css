@@ -39,10 +39,17 @@
 .content_mobile { display: none; }
 .buttons_mobile   { display: none; }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .content_desktop  { display: none; }
   .content_mobile   { display: block; padding: 1rem; }
   .buttons_desktop  { display: none; }
   .buttons_mobile   { display: flex; gap: 0.5rem; justify-content: center; margin-top:1.5rem; }
   .buttons_mobile .button a:hover { background: var(--color-accent-light); }
+} */
+
+@media (max-width: 768px) {
+  .content_desktop { display: none; }
+  .content_mobile  { display: block; }
+  .buttons_desktop { display: none; }
+  .buttons_mobile  { display: flex; }
 }

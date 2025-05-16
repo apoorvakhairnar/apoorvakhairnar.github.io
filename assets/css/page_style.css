@@ -1,6 +1,6 @@
 @import 'style.css';
 
-/* Projects Grid (desktop) */
+/* Desktop grid */
 .content_desktop .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -8,73 +8,31 @@
   padding: 2rem 1rem;
 }
 
-/* Card styling */
-.content_desktop .projects figure {
+/* Mobile grid */
+.content_mobile .projects_mobile {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+/* Card styling (applies to both) */
+.content_desktop .projects figure,
+.content_mobile .projects_mobile figure {
   border: 2px solid var(--color-muted);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform .2s ease, box-shadow .2s ease;
 }
-.content_desktop .projects figure:hover {
+.content_desktop .projects figure:hover,
+.content_mobile .projects_mobile figure:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
-.content_desktop .projects img {
+.content_desktop .projects img,
+.content_mobile .projects_mobile img {
   width: 100%;
   height: auto;
   display: block;
-}
-
-/* Button pills */
-.buttons_desktop {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin: 2rem 0;
-}
-.buttons_desktop .button a {
-  display: inline-block;
-  background: var(--color-accent);
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  transition: filter 0.2s;
-}
-.buttons_desktop .button a:hover {
-  filter: brightness(1.1);
-}
-
-/* Mobile breakpoints */
-@media (max-width: 768px) {
-  /* Swap home layout */
-  .content_desktop { display: none; }
-  .content_mobile {
-    display: block;
-    padding: 1rem;
-  }
-
-  /* Buttons */
-  .buttons_desktop { display: none; }
-  .buttons_mobile {
-    display: flex;
-    gap: 0.5rem;
-    justify-content: center;
-    margin: 1.5rem 0;
-  }
-  .buttons_mobile .button a:hover {
-    filter: brightness(1.1);
-  }
-
-  /* Projects Grid (mobile) */
-  .content_mobile .projects_mobile {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-  .content_mobile .projects_mobile figure:hover {
-    transform: translateY(-4px);
-  }
 }
