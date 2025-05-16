@@ -4,112 +4,94 @@ title: Projects
 permalink: /pages/projects/
 ---
 
-{% raw %}
-<!-- copy the full projects.html body -->
 <div class="content_desktop">
-    <div class="projects">
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/SSSR-Final/"><img src="/assets/SSSR-Final.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/NPR-STAR.html">Non-Pyrotechnic Recovery System for High-Powered Rockets</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/MPC-Final/"><img src="/assets/MPC-Final.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/NPR-STAR.html">Non-Pyrotechnic Recovery System for High-Powered Rockets</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/RnA-Final/"><img src="/assets/RnA-Final.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/NPR-STAR.html">Non-Pyrotechnic Recovery System for High-Powered Rockets</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/NPR-STAR/"><img src="/assets/NPR-STAR.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/NPR-STAR.html">Non-Pyrotechnic Recovery System for High-Powered Rockets</a></figcaption> -->
-        </figure>
-    </div>
-    <div class="projects">
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/STP-STAR/"><img src="/assets/STP-STAR.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/STP-STAR.html">Static Test Pad for Rocket Motors</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/FFT-Sewing/"><img src="/assets/FFT-Sewing.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/FFT-Sewing.html">FFT Analysis of Vibration Signals from Traditional Sewing Machine</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/RoboBee-Review/"><img src="/assets/RoboBee-Review.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/RoboBee-Review.html">Review of RoboBee: Harvard's insect-sized Biomimetic Robot</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/AI-Inventory/"><img src="/assets/AI-Inventory.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/AI-Inventory.html">The Rising Role of Artificial Intelligence in Inventory Management</a></figcaption> -->
-        </figure>
-    </div>
-    <div class="projects">
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/ASM-Watts/"><img src="/assets/ASM-Watts.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/ASM-Watts.html">Analysis and Synthesis of Four bar mechanism - Watt's linkage</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/NMCP/"><img src="/assets/NMCP.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/NMCP.html">Study of "A Numerical Model for Design and Optimization of Surface Textures for Tilting Pad Thrust Bearings"</a></figcaption> -->
-        </figure>
-        <!-- <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/Smoke.html"><img src="/assets/Smoke.jpg"></a>
-        </figure> -->
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/GSF/"><img src="/assets/GSF.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/NMCP.html">Study of "A Numerical Model for Design and Optimization of Surface Textures for Tilting Pad Thrust Bearings"</a></figcaption> -->
-        </figure>
-    </div>
+  <div class="projects">
+    <figure>
+      <a href="{{ '/pages/projects/SSSR-Final/' | relative_url }}">
+        <img src="{{ '/assets/SSSR-Final.jpg' | relative_url }}" alt="Sliding-Scale Soft Robot">
+      </a>
+    </figure>
+    <figure>
+      <a href="{{ '/pages/projects/MPC-Final/' | relative_url }}">
+        <img src="{{ '/assets/MPC-Final.jpg' | relative_url }}" alt="MPC for UGV Trajectory">
+      </a>
+    </figure>
+    <figure>
+      <a href="{{ '/pages/projects/RnA-Final/' | relative_url }}">
+        <img src="{{ '/assets/RnA-Final.jpg' | relative_url }}" alt="4-DOF Kinova Arm Control">
+      </a>
+    </figure>
+    <figure>
+      <a href="{{ '/pages/projects/NPR-STAR/' | relative_url }}">
+        <img src="{{ '/assets/NPR-STAR.jpg' | relative_url }}" alt="Non-Pyrotechnic Recovery">
+      </a>
+    </figure>
+  </div>
+
+  <div class="projects">
+    <figure>
+      <a href="{{ '/pages/projects/STP-STAR/' | relative_url }}">
+        <img src="{{ '/assets/STP-STAR.jpg' | relative_url }}" alt="Static Test Pad for Rocket Motors">
+      </a>
+    </figure>
+    <figure>
+      <a href="{{ '/pages/projects/FFT-Sewing/' | relative_url }}">
+        <img src="{{ '/assets/FFT-Sewing.jpg' | relative_url }}" alt="FFT Analysis of Sewing Machine Vibration">
+      </a>
+    </figure>
+    <figure>
+      <a href="{{ '/pages/projects/RoboBee-Review/' | relative_url }}">
+        <img src="{{ '/assets/RoboBee-Review.jpg' | relative_url }}" alt="RoboBee Biomimetic Robot Review">
+      </a>
+    </figure>
+    <figure>
+      <a href="{{ '/pages/projects/AI-Inventory/' | relative_url }}">
+        <img src="{{ '/assets/AI-Inventory.jpg' | relative_url }}" alt="AI in Inventory Management">
+      </a>
+    </figure>
+  </div>
+
+  <div class="projects">
+    <figure>
+      <a href="{{ '/pages/projects/ASM-Watts/' | relative_url }}">
+        <img src="{{ '/assets/ASM-Watts.jpg' | relative_url }}" alt="Watt’s Linkage Mechanism">
+      </a>
+    </figure>
+    <figure>
+      <a href="{{ '/pages/projects/NMCP/' | relative_url }}">
+        <img src="{{ '/assets/NMCP.jpg' | relative_url }}" alt="Thrust Bearing Surface Textures">
+      </a>
+    </figure>
+    <figure>
+      <a href="{{ '/pages/projects/GSF/' | relative_url }}">
+        <img src="{{ '/assets/GSF.jpg' | relative_url }}" alt="Google Science Fair Project">
+      </a>
+    </figure>
+  </div>
 </div>
+
 <div class="content_mobile">
-    <div class="projects_mobile">
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/SSSR-Final/"><img src="/assets/SSSR-Final.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/NPR-STAR.html">Non-Pyrotechnic Recovery System for High-Powered Rockets</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/MPC-Final/"><img src="/assets/MPC-Final.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/NPR-STAR.html">Non-Pyrotechnic Recovery System for High-Powered Rockets</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/RnA-Final/"><img src="/assets/RnA-Final.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/NPR-STAR.html">Non-Pyrotechnic Recovery System for High-Powered Rockets</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/NPR-STAR/"><img src="/assets/NPR-STAR.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/NPR-STAR.html">Non-Pyrotechnic Recovery System for High-Powered Rockets</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/STP-STAR/"><img src="/assets/STP-STAR.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/STP-STAR.html">Static Test Pad for Rocket Motors</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/FFT-Sewing/"><img src="/assets/FFT-Sewing.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/FFT-Sewing.html">FFT Analysis of Vibration Signals from Traditional Sewing Machine</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/RoboBee-Review/"><img src="/assets/RoboBee-Review.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/RoboBee-Review.html">Review of RoboBee: Harvard's insect-sized Biomimetic Robot</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/AI-Inventory/"><img src="/assets/AI-Inventory.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/AI-Inventory.html">The Rising Role of Artificial Intelligence in Inventory Management</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/ASM-Watts/"><img src="/assets/ASM-Watts.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/ASM-Watts.html">Analysis and Synthesis of Four bar mechanism - Watt's linkage</a></figcaption> -->
-        </figure>
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/NMCP/"><img src="/assets/NMCP.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/NMCP.html">Study of "A Numerical Model for Design and Optimization of Surface Textures for Tilting Pad Thrust Bearings"</a></figcaption> -->
-        </figure>
-        <!-- <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/Smoke.html"><img src="/assets/Smoke.jpg"></a>
-        </figure> -->
-        <figure>
-            <a href="https://apoorvakhairnar.github.io/pages/projects/GSF/"><img src="/assets/GSF.jpg"></a>
-            <!-- <figcaption><a href="https://apoorvakhairnar.github.io/pages/projects/NMCP.html">Study of "A Numerical Model for Design and Optimization of Surface Textures for Tilting Pad Thrust Bearings"</a></figcaption> -->
-        </figure>
-    </div>
+  <div class="projects_mobile">
+    <figure>
+      <a href="{{ '/pages/projects/SSSR-Final/' | relative_url }}">
+        <img src="{{ '/assets/SSSR-Final.jpg' | relative_url }}" alt="Sliding-Scale Soft Robot">
+      </a>
+    </figure>
+    <figure>
+      <a href="{{ '/pages/projects/MPC-Final/' | relative_url }}">
+        <img src="{{ '/assets/MPC-Final.jpg' | relative_url }}" alt="MPC for UGV Trajectory">
+      </a>
+    </figure>
+    <figure>
+      <a href="{{ '/pages/projects/RnA-Final/' | relative_url }}">
+        <img src="{{ '/assets/RnA-Final.jpg' | relative_url }}" alt="4-DOF Kinova Arm Control">
+      </a>
+    </figure>
+    <figure>
+      <a href="{{ '/pages/projects/NPR-STAR/' | relative_url }}">
+        <img src="{{ '/assets/NPR-STAR.jpg' | relative_url }}" alt="Non-Pyrotechnic Recovery">
+      </a>
+    </figure>
+    <!-- repeat the rest of your figures just like above -->
+  </div>
 </div>
-{% endraw %}
