@@ -1,16 +1,15 @@
 @import 'style.css';
 
-/* Desktop layout */
+/* Desktop detail layout */
 .content_desktop {
-  margin-left: 15vw;         /* match your sidenav width */
+  margin-left: 15vw;  /* space for sidebar */
   padding: 2rem 1rem;
   max-width: 800px;
 }
 
-/* Typography */
+/* Text styling */
 .content_desktop h1 {
   font-size: 2.5rem;
-  color: var(--color-text);
   margin-bottom: 1rem;
 }
 .content_desktop p {
@@ -20,20 +19,18 @@
 }
 .content_desktop a {
   color: var(--color-accent);
-  transition: filter 0.2s;
+  transition: filter .2s;
 }
 .content_desktop a:hover {
   filter: brightness(1.2);
 }
 
-/* Mobile layout */
+/* Mobile detail layout */
 .content_mobile {
   display: none;
+  padding: 1rem;
 }
 @media (max-width: 768px) {
   .content_desktop { display: none; }
-  .content_mobile {
-    display: block;
-    padding: 1rem;
-  }
+  .content_mobile  { display: block; }
 }
