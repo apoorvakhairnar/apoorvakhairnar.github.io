@@ -12,3 +12,7 @@ plugins:
 markdown: kramdown
 kramdown:
   input: GFM
+collections:
+  projects:
+    output: true
+    permalink: /pages/projects/:name/
