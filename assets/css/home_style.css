@@ -50,11 +50,21 @@
   padding: 1rem;
   margin-top: 2rem;
 }
+
+.content_mobile .profile-photo img {
+  margin-left: 5%;
+  margin-top: 50px;
+  width: 90%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
 .buttons_mobile {
-  display: none;
-  gap: 0.75rem;
-  flex-direction: column;
-  margin: 1.5rem 0;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .buttons_mobile .button a {
   background: var(--color-accent);
