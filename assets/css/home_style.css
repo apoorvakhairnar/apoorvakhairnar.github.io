@@ -46,9 +46,15 @@
 
 /* 4) Mobile fallback: stacked under nav */
 .content_mobile {
-  display: none;
+  padding-left: 2.5%;
+  padding-top: 50px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  font-size: 20px;
+  justify-content: center;
+  /* display: none;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 2rem; */
 }
 
 .content_mobile .profile-photo img {
