@@ -46,15 +46,9 @@
 
 /* 4) Mobile fallback: stacked under nav */
 .content_mobile {
-  padding-left: 2.5%;
-  padding-top: 50px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  font-size: 20px;
-  justify-content: center;
-  /* display: none;
+  display: none;
   padding: 1rem;
-  margin-top: 2rem; */
+  margin-top: 2rem;
 }
 
 .content_mobile .profile-photo img {
@@ -69,7 +63,7 @@
 .buttons_mobile {
   margin-left: auto;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: center;
   width: 100%;
 }
 
@@ -91,5 +85,5 @@
 /* 5) Breakpoints */
 @media (max-width: 768px) {
   .content_desktop, .buttons_desktop { display: none; }
-  .content_mobile {grid-template-rows: 1fr 1fr;},  .buttons_mobile  { display: flex; }
+  .content_mobile,  .buttons_mobile  { display: flex; }
 }
