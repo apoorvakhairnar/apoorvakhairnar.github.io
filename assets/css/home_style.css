@@ -66,6 +66,7 @@
   justify-content: space-between;
   width: 100%;
 }
+
 .buttons_mobile .button a {
   background: var(--color-accent);
   color: #fff;
@@ -84,5 +85,5 @@
 /* 5) Breakpoints */
 @media (max-width: 768px) {
   .content_desktop, .buttons_desktop { display: none; }
-  .content_mobile,  .buttons_mobile  { display: block; }
+  .content_mobile,  .buttons_mobile  { display: flex; }
 }
