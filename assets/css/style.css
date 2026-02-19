@@ -1,122 +1,30 @@
-/* 1) Color & font variables */
+/* assets/css/style.css */
 :root {
-  --color-bg:            #0a0f22;
-  --color-text:          #bac7cc;
-  --color-accent:        #56b2bb;
-  --color-accent-light:  #f0f4f8;
-  --color-muted:         #666666;
+  /* The Final "Deep Ocean" Palette */
+  --color-bg: #050B14;          /* Deep Abyss */
+  --color-card: #0F1C2E;        /* Marine Blue */
+  --color-border: #1A2C42;      /* Subtle Border */
+  --color-text-primary: #FFFFFF;/* Pure White */
+  --color-text-secondary: #8DA3B5; /* Steel Blue */
+  --color-accent: #2196F3;      /* Luminous Azure */
+  --color-cta: #FF6B6B;         /* Coral Pink */
 
-  --font-sans:   'Trebuchet MS','Lucida Sans Unicode',
-                 'Lucida Grande','Lucida Sans',Arial,sans-serif;
-  --font-serif:  'Merriweather','Georgia','Times New Roman',serif;
+  --font-sans: 'Trebuchet MS', sans-serif;
+  --font-serif: 'Merriweather', serif;
 }
 
-/* 2) Resets & base */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: var(--font-sans);
-}
-html { height: 100%; }
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  background: var(--color-bg);
-  color: var(--color-text);
-  line-height: 1.6;
-}
-
-/* 3) Sticky-footer layout */
-main.container {
-  flex: 1;           /* pushes footer to bottom */
-  width: 100%;
+  background-color: var(--color-bg);
+  color: var(--color-text-secondary);
+  font-family: var(--font-sans);
   margin: 0;
-  padding: 0;
-}
-footer.container {
-  text-align: center;
-  padding: 1.5rem 0;
-  font-size: 0.9rem;
-  color: var(--color-muted);
 }
 
-/* 4) Sidebar (desktop) */
-.sidenav {
-  position: fixed; top: 0; left: 0;
-  width: 12vw; height: 100vh;
-  background: var(--color-bg);
-  padding-top: 15%;
-  text-align: center;
-  z-index: 1;
-}
-.sidenav a {
-  display: block;
-  color: var(--color-text);
-  padding: 16px 0;
-  font-size: 1.2rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s;
-}
-.sidenav a:hover {
-  background: var(--color-text);
-  color: var(--color-bg);
+h1, h2, h3 {
+  color: var(--color-text-primary);
 }
 
-/* 5) Mobile top nav */
-.nav_mobile {
-  display: none;
-  position: fixed; top: 0; left: 0;
-  width: 100%; height: 50px;
-  background: var(--color-bg);
-  text-align: center;
-  z-index: 2;
-}
-.nav_mobile a {
-  color: var(--color-text);
-  padding: 0 1rem;
-  line-height: 50px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  text-decoration: none;
-}
-.nav_mobile a:hover {
-  background: var(--color-text);
-  color: var(--color-bg);
-}
-
-/* 6) Global link style */
 a {
   color: var(--color-accent);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-a:hover {
-  color: var(--color-accent-light);
-}
-
-/* 7) Shared typography */
-h1, h2, h3, h4 {
-  font-family: var(--font-serif);
-  color: var(--color-accent-light);
-  margin-bottom: 0.5em;
-}
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
-p  {
-  font-size: 1rem;
-  color: var(--color-text);
-  margin-bottom: 1rem;
-}
-
-/* 8) Show/hide nav + content zones */
-@media (max-width: 768px) {
-  .sidenav             { display: none; }
-  .nav_mobile          { display: block; }
-}
-@media (min-width: 768px) {
-  .nav_mobile          { display: none; }
+  transition: 0.3s;
 }

@@ -1,51 +1,43 @@
 ---
 layout: default
-title:  Home
+title: Home
 extra_css:
   - home_style.css
 ---
-<!-- Page content for desktop -->
-<div class="content_desktop">
-  <div class="about">
-    <h1>Apoorva Khairnar</h1>
-    <p>
-      Hi! I am Apoorva, a Ph.D. student at the Department of Mechanical Engineering, <a href="https://vt.edu">Virginia Tech</a>. 
-      I completed my Bachelor's in Mechanical Engineering (2021) with Honors in Thermal Engineering from <a href="https://www.coep.org.in/">COEP Technological Univeristy</a> (formerly College of Engineering Pune).
-      Currently, I am working as a Graduate Research Assistant at the <a href="https://naughtonlab.org/">Biomechanical Systems Lab</a> at VT under the guidance of <a href="https://me.vt.edu/people/faculty/naughton-noel.html">Dr. Noel Naughton</a>. My research
-      focuses on the control of soft robots such as octopus arms and snakes using Neuromorphic Computing. Additionally, my work involves integrating artificial and physical reservoir computers to enable embedded sensing in soft robots.
-    </p>
-  </div>
-  <div class="profile-photo">
-    <img src="/assets/images/apoorva2.jpg" alt="apoorvakhairnar">
-  </div>
-</div>
 
-<!-- Page content for mobile -->
-<div class="content_mobile">
-  <div class="about">
-    <h1>Apoorva Khairnar</h1>
-    <p>
-      Hi! I am Apoorva, a Ph.D. student at the Department of Mechanical Engineering, <a href="https://vt.edu">Virginia Tech</a>. 
-      I completed my Bachelor's in Mechanical Engineering (2021) with Honors in Thermal Engineering from <a href="https://www.coep.org.in/">COEP Technological Univeristy</a> (formerly College of Engineering Pune).
-      Currently, I am working as a Graduate Research Assistant at the <a href="https://naughtonlab.org/">Biomechanical Systems Lab</a> at VT under the guidance of <a href="https://me.vt.edu/people/faculty/naughton-noel.html">Dr. Noel Naughton</a>. My research
-      focuses on the control of soft robots such as octopus arms and snakes using Neuromorphic Computing. Additionally, my work involves integrating artificial and physical reservoir computers to enable embedded sensing in soft robots.
-    </p>
+<div class="bento-container">
+  <div class="bento-card bio-box">
+    <img src="{{ '/assets/images/apoorva2.jpg' | relative_url }}" class="profile-img" alt="Apoorva Khairnar">
+    <div class="bio-text">
+      <h1>Hi, I'm Apoorva</h1>
+      <p>I am a Ph.D. student at Virginia Tech researching the control and sensing of soft robots using Reservoir Computing.</p>
+      <p><strong>Objective:</strong> I intend to lead research in autonomous systems and soft robotics in academina or an industrial R&D setting after graduation.</p>
+    </div>
   </div>
-  <div class="profile-photo">
-    <img src="/assets/images/apoorva2.jpg" alt="apoorvakhairnar">
+
+  <a href="{{ '/pages/projects' | relative_url }}" class="bento-card">
+    <h2>Research & Pubs</h2>
+    <p>Exploring reservoir computing and embedded sensing for soft robots.</p>
+    <span>View Projects →</span>
+  </a>
+
+  <div class="bento-card" style="grid-column: span 1.5;">
+    <h2>Teaching</h2>
+    <p>"My philosophy centers on bridging theoretical mechanics with hands-on robotics experimentation."</p>
+    <p>TODO.</p>
   </div>
-</div>
 
-<!-- Buttons for desktop -->
-<div class="buttons_desktop">
-  <div class="button"><a href="mailto:apoorvak@vt.edu">Email</a></div>
-  <div class="button"><a href="https://github.com/apoorvakhairnar">Github</a></div>
-  <div class="button"><a href="https://www.linkedin.com/in/apoorva-khairnar-6b381a1a0/">LinkedIn</a></div>
-</div>
+  <div class="bento-card">
+    <h2>Personal</h2>
+    <ul>
+      <li>Fun Fact 1</li>
+      <li>Fun Fact 2</li>
+      <li>Fun Fact 3</li>
+    </ul>
+  </div>
 
-<!-- Buttons for mobile -->
-<div class="buttons_mobile">
-  <div class="button"><a href="mailto:apoorvak@vt.edu">Email</a></div>
-  <div class="button"><a href="https://github.com/apoorvakhairnar">Github</a></div>
-  <div class="button"><a href="https://www.linkedin.com/in/apoorva-khairnar-6b381a1a0/">LinkedIn</a></div>
+  <a href="{{ '/assets/files/Apoorva_Khairnar_CV.pdf' | relative_url }}" class="bento-card cv-box">
+    <h2>Download CV</h2>
+    <p>Full Academic Resume</p>
+  </a>
 </div>
