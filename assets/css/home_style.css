@@ -14,7 +14,7 @@ body {
 .bento-container {
     width: 100%;
     max-width: 1400px; /* Increased width for room to breathe */
-    margin: 60px auto;
+    margin: 20px auto 20px auto; /* More vertical spacing */
     padding: 20px; /* Padding prevents edge-touching */
     box-sizing: border-box; /* Crucial for mobile sizing */
     

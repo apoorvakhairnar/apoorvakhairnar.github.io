@@ -28,3 +28,15 @@ a {
   color: var(--color-accent);
   transition: 0.3s;
 }
+
+footer.container {
+  width: 100%; /* Forces it to span the whole bottom */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  margin-top: auto; /* Pushes it to the absolute bottom of the flex body */
+}
