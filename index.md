@@ -23,7 +23,7 @@ extra_css:
     <span>View Publications →</span>
   </a>
 
-  <a href="{{ '/pages/projects/index.md' | relative_url }}" class="bento-card projects-box">
+  <a href="{{ '/pages/projects/index' | relative_url }}" class="bento-card projects-box">
     <h2>Projects</h2>
     <p>Explore my hobby projects in mechanical engineering and robotics.</p>
     <span>View Gallery →</span>
