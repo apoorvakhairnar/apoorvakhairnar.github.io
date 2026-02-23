@@ -23,7 +23,6 @@ body {
     /* Custom 3-column layout: left column is wider */
     grid-template-columns: 1.5fr 1fr 1fr; 
     gap: 25px;
-    overflow-y: hidden; /* Prevents double scrollbars */
 }
 
 /* Base Card Styling */
