@@ -6,8 +6,9 @@
 }
 
 .css-tabs-wrapper {
-  margin-top: 80px;
+  margin-top: 90px;
   padding: 0 20px;
+  margin-bottom: 40px; /* Ensures space above the footer */
 }
 
 /* =========================================
@@ -18,12 +19,14 @@
   gap: 30px;
   max-width: 1200px;
   margin: auto;
+  /* Lock the container perfectly into the browser window */
+  height: calc(100vh - 180px); 
 }
 
 /* The Left Column (Master List) */
 .project-list {
   width: 35%;
-  max-height: 80vh;
+  height: 100%; /* Fills the locked container */
   overflow-y: auto;
   display: flex;
   flex-direction: column;
@@ -67,13 +70,12 @@
 /* The Right Column (Detail View) */
 .project-details {
   width: 65%;
-  height: 75vh;
+  height: 100%; /* Fills the locked container */
   background: var(--color-card);
   border: 1px solid var(--color-border);
   border-radius: 24px;
   padding: 40px;
   box-shadow: 0 10px 30px rgba(0,0,0,0.4);
-  max-height: 80vh;
   overflow-y: auto;
 }
 
@@ -115,6 +117,7 @@
   .split-view-container {
     flex-direction: column;
     gap: 20px;
+    height: auto; /* <--- ADD THIS */
   }
   
   /* Left List becomes horizontal scrolling pills */
@@ -123,6 +126,7 @@
     flex-direction: row;
     overflow-x: auto;
     overflow-y: hidden;
+    height: auto; /* <--- ADD THIS */
     max-height: auto;
     padding-bottom: 15px;
     padding-right: 0;
@@ -140,7 +144,7 @@
   /* Right Details stacks underneath */
   .project-details {
     width: 100%;
-    max-height: none; /* Let it stretch based on content height */
+    height: auto; /* <--- ADD THIS */
     padding: 25px;
   }
   

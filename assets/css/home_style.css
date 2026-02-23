@@ -13,8 +13,8 @@ body {
 /* 1. Main Grid Container */
 .bento-container {
     width: 100%;
-    height: auto;
-    max-width: 1900px; /* Increased width for room to breathe */
+    height: calc(100vh - 100px);
+    max-width: 1400px; /* Increased width for room to breathe */
     margin: 10px auto 0px auto; /* More vertical spacing */
     padding: 20px; /* Padding prevents edge-touching */
     box-sizing: border-box; /* Crucial for mobile sizing */
@@ -23,6 +23,7 @@ body {
     /* Custom 3-column layout: left column is wider */
     grid-template-columns: 1.5fr 1fr 1fr; 
     gap: 25px;
+    overflow-y: hidden; /* Prevents double scrollbars */
 }
 
 /* Base Card Styling */
@@ -65,16 +66,23 @@ body {
 }
 
 /* Top Row (Right Side) */
-.research-box   { grid-column: span 1; }
-.projects-box   { grid-column: span 1; }
+.research-box   { 
+    grid-column: span 1; 
+    grid-row: span 1; 
+}
+.projects-box   { 
+    grid-column: span 1; 
+    grid-row: span 1;
+}
 
 /* Middle Row (Right Side) */
-.experience-box { grid-column: span 2; }
+.experience-box { grid-column: span 2; grid-row: span 1; }
 
 /* Bottom Row (Right Side) */
-.personal-box   { grid-column: span 1; }
+.personal-box   { grid-column: span 1; grid-row: span 1; }
 .cv-box { 
     grid-column: span 1; 
+    grid-row: span 1;
     background: var(--color-cta) !important; 
     color: #fff;
     text-align: center;
