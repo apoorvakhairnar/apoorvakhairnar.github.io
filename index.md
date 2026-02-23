@@ -44,11 +44,10 @@ extra_css:
 
   <div class="bento-card personal-box">
     <h2>Personal</h2>
-    <p>Beyond the lab:</p>
-    <p>I am trained in Indian Classical Singing and like to play the harmonium.</p>
-    <p>I enjoy hiking, and traveling to new places.</p>
-    <p>I have a passion for wildlife photography and enjoy capturing moments from my travels.</p>
-    <p>I love cooking and trying out new recipes.</p>
+    <p>Beyond the lab, I enjoy:</p>
+    <p>Indian Classical Singing and playing the harmonium</p>
+    <p>Hiking and traveling to new places</p>
+    <p>Wildlife photography</p>
   </div>
 
   <a href="{{ '/assets/files/Apoorva_Khairnar_CV.pdf' | relative_url }}" class="bento-card cv-box">

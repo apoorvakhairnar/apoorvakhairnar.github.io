@@ -76,7 +76,10 @@ body {
 .experience-box { grid-column: span 2;}
 
 /* Bottom Row (Right Side) */
-.personal-box   { grid-column: span 1;}
+.personal-box   { 
+    grid-column: span 1;
+    line-height: normal; /* Fixes spacing if content is short */
+}
 .cv-box { 
     grid-column: span 1; 
     background: var(--color-cta) !important; 
