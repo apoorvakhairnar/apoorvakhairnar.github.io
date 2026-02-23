@@ -22,11 +22,11 @@ extra_css:
     </div>
   </div>
 
-  <a href="https://scholar.google.com/citations?user=SeCzgwsAAAAJ&hl=en" class="bento-card research-box">
+  <div class="bento-card research-box">
     <h2>Research & Pubs</h2>
     <p style="text-decoration: none;">I build smarter, more adaptable soft robots by equipping them with brain-inspired artificial intelligence. My research focuses on "reservoir computing"—a technique that allows flexible robots to process sensory information directly through their physical bodies rather than relying entirely on traditional, rigid computer brains.</p>
-    <span>View Publications →</span>
-  </a>
+    <a href="https://scholar.google.com/citations?user=SeCzgwsAAAAJ&hl=en"><span>View Publications →</span></a>
+  </div>
 
   <a href="{{ '/pages/projects' | relative_url }}" class="bento-card projects-box">
     <h2>Projects</h2>
