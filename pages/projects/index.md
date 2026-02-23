@@ -27,7 +27,8 @@ extra_css:
         <div class="proj-content proj-content-{{ forloop.index }}">
           <!-- <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}"> -->
           <h2>{{ proj.title }}</h2>
-          {{ proj.content }} 
+          {{ proj.content }}
+          {{ proj.date | date: "%B %d, %Y" }}
         </div>
       {% endfor %}
     </div>

@@ -24,21 +24,22 @@ extra_css:
 
   <div class="bento-card research-box">
     <h2>Research & Pubs</h2>
-    <p style="text-decoration: none;">I build smarter, more adaptable soft robots by equipping them with brain-inspired artificial intelligence. My research focuses on "reservoir computing"—a technique that allows flexible robots to process sensory information directly through their physical bodies rather than relying entirely on traditional, rigid computer brains.</p>
+    <p>I build smarter, more adaptable soft robots by equipping them with brain-inspired artificial intelligence. My research focuses on "reservoir computing"—a technique that allows flexible robots to process sensory information directly through their physical bodies rather than relying entirely on traditional, rigid computer brains.</p>
     <a href="https://scholar.google.com/citations?user=SeCzgwsAAAAJ&hl=en"><span>View Publications →</span></a>
   </div>
 
-  <a href="{{ '/pages/projects' | relative_url }}" class="bento-card projects-box">
+  <div class="bento-card projects-box">
     <h2>Projects</h2>
-    <p style="text-decoration: none;">Hobby and Course Projects in STEM</p>
-    <span>View Gallery →</span>
-  </a>
+    <p>This collection highlights my practical, hands-on experience in advanced robotics, non-linear control systems, mechanical fabrication, and applied artificial intelligence.</p>
+    <a href="{{ '/pages/projects' | relative_url }}"><span>View Projects →</span></a>
+  </div> 
 
   <div class="bento-card experience-box">
     <h2>Experience</h2>
     <p><strong>Graduate Research Assistant</strong> - Biomechanical Systems Lab, VT</p>
     <p><strong>Fluid Mechanics Tutor</strong> - Dept. of Mechanical Engineering, VT</p>
-    <p><strong>Systems Engineer Intern</strong> - STAR (Space Technology & Aeronautical Rocketry)</p>
+    <p><strong>Software Developer</strong> - Siemens Technology and Services, India</p>
+    <a href="{{ '/pages/experience' | relative_url }}"><span>View More →</span></a>
   </div>
 
   <div class="bento-card personal-box">
