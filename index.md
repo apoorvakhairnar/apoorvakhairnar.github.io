@@ -52,6 +52,7 @@ extra_css:
       <li>Indian Classical Singing and playing the harmonium</li>
       <li>Hiking and traveling to new places</li>
       <li>Wildlife photography</li>
+      <li>Cooking and trying new cuisines</li>
     </ul>
   </div>
 
