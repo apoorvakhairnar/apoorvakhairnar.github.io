@@ -1,46 +1,147 @@
 /* assets/css/project_style.css */
-/* —————————————————————————————————————————————
-   Individual Project Detail Pages
-————————————————————————————————————————————— */
 
-/* 1) Pull in global vars, resets, nav, typography */
-@import 'style.css';
+/* Hide old navigation elements to match Deep Ocean layout */
+.sidenav, .nav_mobile {
+    display: none !important;
+}
 
-/* 2) Desktop detail layout */
-.content_desktop {
-  /* leave room for sidebar and center content */
-  margin-top: 4rem;
-  margin-right: auto;
-  margin-left: 15vw;
-  max-width: 900px;
+.css-tabs-wrapper {
+  margin-top: 80px;
+  padding: 0 20px;
+}
+
+/* =========================================
+   DESKTOP VIEW: Split Master-Detail
+   ========================================= */
+.split-view-container {
   display: flex;
-  align-items: flex-start;    /* top-align text */
-  justify-content: center;
-  gap: 2rem;
-  padding: 0 1rem;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* 3) Text column */
-.content_desktop .about {
-  flex: 1 1 400px;
+/* The Left Column (Master List) */
+.project-list {
+  width: 35%;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-right: 15px; /* Room for scrollbar */
 }
 
-/* 4) Image column */
-.content_desktop .profile-photo img {
-  max-width: 300px;
+/* Custom Scrollbar for Left Column */
+.project-list::-webkit-scrollbar { width: 6px; }
+.project-list::-webkit-scrollbar-track { background: var(--color-bg); }
+.project-list::-webkit-scrollbar-thumb { background: var(--color-border); border-radius: 10px; }
+
+/* Clickable Labels (Buttons) */
+.proj-label {
+  display: block;
+  cursor: pointer;
+  padding: 20px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  border-left: 4px solid transparent;
+  color: var(--color-text-secondary);
+  transition: all 0.3s ease;
+}
+
+.proj-label:hover {
+  background: var(--color-border);
+}
+
+.proj-label h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+  color: inherit;
+}
+
+.proj-date {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* The Right Column (Detail View) */
+.project-details {
+  width: 65%;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+/* Detail Content Styling */
+.project-content img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  margin-bottom: 25px;
+  border: 1px solid var(--color-border);
 }
 
-/* 5) Mobile detail layout (stacked) */
-.content_mobile {
-  display: none;
-  padding: 1rem;
-  margin-top: 60px;           /* push below mobile nav */
+.project-content h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: var(--color-text-primary);
 }
+
+.project-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: var(--color-text-secondary);
+}
+
+.project-content strong {
+  color: var(--color-accent); /* Makes "The Goal:", "My Role:", "Tools:" pop */
+}
+
+
+/* =========================================
+   MOBILE VIEW: Stacked & Horizontal Row
+   ========================================= */
 @media (max-width: 768px) {
-  .content_desktop { display: none; }
-  .content_mobile  { display: block; }
+  .css-tabs-wrapper { margin-top: 40px; }
+  
+  .split-view-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  /* Left List becomes horizontal scrolling pills */
+  .project-list {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-height: auto;
+    padding-bottom: 15px;
+    padding-right: 0;
+    scroll-snap-type: x mandatory;
+    gap: 15px;
+  }
+  
+  /* Pill Sizing */
+  .proj-label {
+    flex: 0 0 75%; /* Shows 1 full pill and a peek of the next */
+    scroll-snap-align: center;
+    padding: 15px;
+  }
+
+  /* Right Details stacks underneath */
+  .project-details {
+    width: 100%;
+    max-height: none; /* Let it stretch based on content height */
+    padding: 25px;
+  }
+  
+  .project-content h2 { font-size: 1.5rem; }
 }

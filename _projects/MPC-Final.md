@@ -1,46 +1,17 @@
 ---
 layout: default
 title: Model Predictive Tracking Control of Unmanned Ground Vehicle
-date: 2023-05-15        # the date the project was done
+date: 2023-05-15
 image: "/assets/projects/MPC-Final.jpg"
 permalink: /pages/projects/MPC-Final/
 extra_css:
   - project_style.css
 ---
+**The Goal:** Model a control sequence for trajectory tracking of an Unmanned Ground Vehicle (UGV) based on the Dynamic Bicycle Model.
 
-<!-- paste the body from MPC-Final.html here -->
-<div class="content_desktop">
-    <div class="projects">
-        <h1>Model Predictive Tracking Control of Unmanned Ground Vehicle</h1>
-        <p>
-            As a part of the final evaluation of the Model Predictive Control (MPC) course (Special study) offered at <a href="https://vt.edu">Virginia Tech</a> (VT), a control sequence
-            was modelled for the trajectory tracking of an Unmanned Ground Vehicle (UGV). This project was conducted under the guidance of 
-            <a href="https://scholar.google.com/citations?user=aOboTjAAAAAJ&hl=en">Dr. Kaveh Akbari Hamed</a> from the Department of Mechanical Engineering at VT.<br>
-            The UGV in question was based on the Dynamic Bicycle Model of a ground vehicle. The goal of this project was for the UGV to successfully track two desired trajectories 
-            using the MPC algorithm. Using the equations of motion and principles of MPC, an objective function with specific constraints were obtained. The optimization was performed 
-            using the quadprog algorithm in MATLAB. The control horizon and optimization parameters were manually tuned for an Infinity-shaped trajectory and a Horseshoe-shaped trajectory.<br>
-            All the computations and control algorithms were performed in MATLAB followed by the generation of an animation sequence for each of the 2 cases.
-        </p>
-    </div>
-    <!-- <div class="project-photo">
-        <img src="assets/NPR-STAR.png">
-    </div> -->
-</div>
-<!-- Page content for mobile-->
-<div class="content_mobile">
-    <div class="projects_mobile">
-        <h1>Model Predictive Tracking Control of Unmanned Ground Vehicle</h1>
-        <p>
-            As a part of the final evaluation of the Model Predictive Control (MPC) course (Special study) offered at <a href="https://vt.edu">Virginia Tech</a> (VT), a control sequence
-            was modelled for the trajectory tracking of an Unmanned Ground Vehicle (UGV). This project was conducted under the guidance of 
-            <a href="https://scholar.google.com/citations?user=aOboTjAAAAAJ&hl=en">Dr. Kaveh Akbari Hamed</a> from the Department of Mechanical Engineering at VT.<br>
-            The UGV in question was based on the Dynamic Bicycle Model of a ground vehicle. The goal of this project was for the UGV to successfully track two desired trajectories 
-            using the MPC algorithm. Using the equations of motion and principles of MPC, an objective function with specific constraints were obtained. The optimization was performed 
-            using the quadprog algorithm in MATLAB. The control horizon and optimization parameters were manually tuned for an Infinity-shaped trajectory and a Horseshoe-shaped trajectory.<br>
-            All the computations and control algorithms were performed in MATLAB followed by the generation of an animation sequence for each of the 2 cases.
-        </p>
-    </div>
-    <!-- <div class="project-photo">
-        <img src="assets/NPR-STAR.png">
-    </div> -->
-</div>
+**My Role/The Solution:** Formulated an objective function with constraints using equations of motion and MPC principles. Tuned control horizon and parameters in MATLAB using the `quadprog` algorithm to track Infinity and Horseshoe trajectories.
+
+**Tools:** MATLAB, Model Predictive Control (MPC), Quadprog
+
+**Link:**
+
