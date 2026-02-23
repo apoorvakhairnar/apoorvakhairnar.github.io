@@ -36,15 +36,19 @@ extra_css:
 
   <div class="bento-card experience-box">
     <h2>Experience</h2>
-    <p><strong>Graduate Research Assistant</strong> - Biomechanical Systems Lab, VT</p>
-    <p><strong>Fluid Mechanics Tutor</strong> - Dept. of Mechanical Engineering, VT</p>
-    <p><strong>Software Developer</strong> - Siemens Technology and Services, India</p>
-    <a href="{{ '/pages/experience' | relative_url }}"><span>View More →</span></a>
+    <p><strong>Graduate Research Assistant</strong> - Biomechanical Systems Lab, VT (Aug 2023 - Present)</p>
+    <p><strong>Fluid Mechanics Tutor</strong> - Dept. of Mechanical Engineering, VT (Sept 2022 - May 2023)</p>
+    <p><strong>Software Developer</strong> - Siemens Technology and Services, India (Sept 2021 - June 2022)</p>
+    <!-- <a href="{{ '/pages/experience' | relative_url }}"><span>View More →</span></a> -->
   </div>
 
   <div class="bento-card personal-box">
     <h2>Personal</h2>
-    <p>Beyond the lab, I am interested in [Add fun facts here, e.g., STEM outreach, hiking, or specific hobbies].</p>
+    <p>Beyond the lab:</p>
+    <p>I am trained in Indian Classical Singing and like to play the harmonium.</p>
+    <p>I enjoy hiking, and traveling to new places.</p>
+    <p>I have a passion for wildlife photography and enjoy capturing moments from my travels.</p>
+    <p>I love cooking and trying out new recipes.</p>
   </div>
 
   <a href="{{ '/assets/files/Apoorva_Khairnar_CV.pdf' | relative_url }}" class="bento-card cv-box">
