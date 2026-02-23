@@ -20,7 +20,7 @@
   max-width: 1200px;
   margin: auto;
   /* Lock the container perfectly into the browser window */
-  height: calc(100vh - 180px); 
+  height: calc(100vh - 200px); 
 }
 
 /* The Left Column (Master List) */
