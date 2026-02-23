@@ -10,21 +10,27 @@ extra_css:
     <img src="{{ '/assets/images/apoorva2.jpg' | relative_url }}" class="profile-img" alt="Apoorva Khairnar">
     <div class="bio-text">
       <h1>Hi, I'm Apoorva</h1>
-      <p>I am a Ph.D. student at the Department of Mechanical Engineering, Virginia Tech. I completed my Bachelor's in Mechanical Engineering (2021) with Honors in Thermal Engineering from COEP Technological University.
+      <p>
+        I am a Ph.D. candidate in Mechanical Engineering at Virginia Tech in Blacksburg, VA. My academic journey began in Pune, India, where I earned my Bachelor of Technology in Mechanical Engineering (with Honors in Thermal Engineering) from COEP Technological University in 2021.
+      </p>
+      <p>
+        Currently, I am a Graduate Research Assistant in the Biomechanical Systems Lab. I am deeply passionate about bridging the gap between biology and engineering to build smarter, more adaptable machines. Following my doctoral studies, my objective is to join a high-impact research environment where I can push the boundaries of soft robotics and physical reservoir computing, translating bio-inspired concepts into next-generation technological solutions.
+      </p>
+      <!-- <p>I am a Ph.D. student at the Department of Mechanical Engineering, Virginia Tech. I completed my Bachelor's in Mechanical Engineering (2021) with Honors in Thermal Engineering from COEP Technological University.
       Currently, I am a Graduate Research Assistant at the <a href="https://naughtonlab.org/">Biomechanical Systems Lab</a>. My research focuses on using Reservoir Computing for control and sensing of soft robots.</p>
-      <p><strong style="color: var(--color-accent);">Objective:</strong> I intend to advance the field of soft robotics and physical reservoir computing in high-impact research environments following my doctoral studies.</p>
+      <p><strong style="color: var(--color-accent);">Objective:</strong> I intend to advance the field of soft robotics and physical reservoir computing in high-impact research environments following my doctoral studies.</p> -->
     </div>
   </div>
 
   <a href="https://scholar.google.com/citations?user=SeCzgwsAAAAJ&hl=en" class="bento-card research-box">
     <h2>Research & Pubs</h2>
-    <p>I build smarter, more adaptable soft robots by equipping them with brain-inspired artificial intelligence. My research focuses on "reservoir computing"—a technique that allows flexible robots to process sensory information directly through their physical bodies rather than relying entirely on traditional, rigid computer brains.</p>
+    <p style="text-decoration: none;">I build smarter, more adaptable soft robots by equipping them with brain-inspired artificial intelligence. My research focuses on "reservoir computing"—a technique that allows flexible robots to process sensory information directly through their physical bodies rather than relying entirely on traditional, rigid computer brains.</p>
     <span>View Publications →</span>
   </a>
 
   <a href="{{ '/pages/projects' | relative_url }}" class="bento-card projects-box">
     <h2>Projects</h2>
-    <p>Hobby and Course Projects in STEM</p>
+    <p style="text-decoration: none;">Hobby and Course Projects in STEM</p>
     <span>View Gallery →</span>
   </a>
 

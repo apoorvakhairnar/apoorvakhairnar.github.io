@@ -1,5 +1,10 @@
 @import 'style.css';
 
+/* Remove existing side/top nav for this layout */
+.sidenav, .nav_mobile {
+    display: none !important;
+}
+
 /* Hide radios and all content by default */
 .tab-radio { display: none; }
 .proj-content { display: none; }

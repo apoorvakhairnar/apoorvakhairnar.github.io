@@ -25,7 +25,7 @@ extra_css:
     <div class="project-details">
       {% for proj in sorted %}
         <div class="proj-content proj-content-{{ forloop.index }}">
-          <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}">
+          <!-- <img src="{{ proj.image | relative_url }}" alt="{{ proj.title }}"> -->
           <h2>{{ proj.title }}</h2>
           {{ proj.content }} 
         </div>
