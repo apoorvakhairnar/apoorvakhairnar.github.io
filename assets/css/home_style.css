@@ -14,7 +14,6 @@ body {
 /* 1. Main Grid Container */
 .bento-container {
     width: 100%;
-    height: calc(100vh - 100px);
     max-width: 1600px; /* Increased width for room to breathe */
     margin: 10px auto 0px auto; /* More vertical spacing */
     padding: 20px; /* Padding prevents edge-touching */
