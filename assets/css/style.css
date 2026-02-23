@@ -24,6 +24,10 @@ h1, h2, h3 {
   color: var(--color-text-primary);
 }
 
+p {
+  color: var(--color-text-secondary);
+}
+
 a {
   color: var(--color-accent);
   transition: 0.3s;
