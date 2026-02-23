@@ -5,65 +5,122 @@
     display: none !important;
 }
 
+/* Prevent accidental horizontal scrolling on mobile */
+body {
+    overflow-x: hidden;
+}
+
+/* 1. Main Grid Container */
 .bento-container {
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1400px; /* Increased width for room to breathe */
     margin: 60px auto;
-    padding: 20px;
+    padding: 20px; /* Padding prevents edge-touching */
+    box-sizing: border-box; /* Crucial for mobile sizing */
+    
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4-column layout */
+    /* Custom 3-column layout: left column is wider */
+    grid-template-columns: 1.5fr 1fr 1fr; 
     gap: 25px;
 }
 
+/* Base Card Styling */
 .bento-card {
     background: var(--color-card);
     border: 1px solid var(--color-border);
-    border-radius: 24px; /* Updated rounded corners */
-    padding: 35px; /* Generous padding */
+    border-radius: 24px;
+    padding: 35px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    box-sizing: border-box;
 }
 
-/* Grid Spans */
-.bio-box        { grid-column: span 2; }
+.bento-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-accent);
+}
+
+/* =========================================
+   DESKTOP GRID PLACEMENT (Default)
+   ========================================= */
+
+/* The Left Pillar */
+.bio-box { 
+    grid-column: span 1; 
+    grid-row: span 3; /* Spans 3 rows vertically */
+    justify-content: center;
+}
+
+/* Mobile Zoom/Overflow Fix for Profile Image */
+.bio-box img.profile-img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px; /* Soft edges for the image */
+    border: 3px solid var(--color-accent);
+    margin-bottom: 25px;
+}
+
+/* Top Row (Right Side) */
 .research-box   { grid-column: span 1; }
 .projects-box   { grid-column: span 1; }
+
+/* Middle Row (Right Side) */
 .experience-box { grid-column: span 2; }
+
+/* Bottom Row (Right Side) */
 .personal-box   { grid-column: span 1; }
-.cv-box         { 
+.cv-box { 
     grid-column: span 1; 
     background: var(--color-cta) !important; 
     color: #fff;
     text-align: center;
     justify-content: center;
+    align-items: center;
 }
+.cv-box h2, .cv-box p { color: #fff; }
 
-/* Responsive Breakpoints */
+/* =========================================
+   TABLET REFLOW (Max Width: 1024px)
+   ========================================= */
 @media (max-width: 1024px) {
     .bento-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for Tablet */
+        grid-template-columns: repeat(2, 1fr); /* Force 2 columns */
     }
-    .bio-box, .experience-box, .research-box, .projects-box, .personal-box, .cv-box {
+    
+    /* Reset the Bio box so it doesn't break the tablet grid */
+    .bio-box { 
+        grid-column: span 2; 
+        grid-row: auto; 
+    }
+    .experience-box { grid-column: span 2; }
+    
+    .research-box, .projects-box, .personal-box, .cv-box {
         grid-column: span 1;
     }
-    /* Keep Bio and Experience wider on tablet if desired */
-    .bio-box, .experience-box { grid-column: span 2; }
 }
 
+/* =========================================
+   MOBILE REFLOW (Max Width: 768px)
+   ========================================= */
 @media (max-width: 768px) {
     .bento-container {
-        grid-template-columns: 1fr; /* 1 column for Mobile */
+        grid-template-columns: 1fr; /* Force 1 column stack */
+        padding: 15px; /* Slightly tighter padding for small phones */
     }
+    
+    /* All boxes take up the full width */
     .bio-box, .experience-box, .research-box, .projects-box, .personal-box, .cv-box {
         grid-column: span 1;
     }
     
-    /* Mobile UX Fix: Reordering */
-    .bio-box { order: 1; }
-    .cv-box  { order: 2; } /* CV directly under Bio */
-    .research-box { order: 3; }
-    .projects-box { order: 4; }
+    /* Reordering Elements (CV Box jumps to position 2) */
+    .bio-box        { order: 1; }
+    .cv-box         { order: 2; }
+    .research-box   { order: 3; }
+    .projects-box   { order: 4; }
     .experience-box { order: 5; }
-    .personal-box { order: 6; }
+    .personal-box   { order: 6; }
 }
