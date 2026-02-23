@@ -6,7 +6,7 @@
   --color-border: #1A2C42;      /* Subtle Border */
   --color-text-primary: #FFFFFF;/* Pure White */
   --color-text-secondary: #8DA3B5; /* Steel Blue */
-  --color-accent: #FF6B6B;      /* Coral Pink */
+  --color-accent: #4FD1C5;      /* Teal Accent */
   --color-cta: #FF6B6B;         /* Coral Pink */
 
   --font-sans: 'Trebuchet MS', sans-serif;
@@ -37,6 +37,6 @@ footer.container {
   align-items: center;
   padding: 1.5rem 0;
   font-size: 0.9rem;
-  color: var(--color-muted);
+  color: var(--color-text-secondary);
   margin-top: auto; /* Pushes it to the absolute bottom of the flex body */
 }
