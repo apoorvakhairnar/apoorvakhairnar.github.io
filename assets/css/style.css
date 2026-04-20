@@ -1,14 +1,21 @@
 /* assets/css/style.css */
 :root {
   /* The Final "Deep Ocean" Palette */
-  --color-bg: #050B14;          /* Deep Abyss */
-  --color-card: #0F1C2E;        /* Marine Blue */
-  --color-border: #1A2C42;      /* Subtle Border */
-  --color-text-primary: #FFFFFF;/* Pure White */
-  --color-text-secondary: #8DA3B5; /* Steel Blue */
-  --color-accent: #4FD1C5;      /* Teal Accent */
-  --color-cta: #FF6B6B;         /* Coral Pink */
-
+  --color-bg: #050B14;
+  /* Deep Abyss */
+  --color-card: #0F1C2E;
+  /* Marine Blue */
+  --color-border: #1A2C42;
+  /* Subtle Border */
+  --color-text-primary: #FFFFFF;
+  /* Pure White */
+  /* --color-text-secondary: #8DA3B5; Steel Blue */
+  --color-text-secondary: #c9d1d9;
+  /* Light Steel Blue */
+  --color-accent: #4FD1C5;
+  /* Teal Accent */
+  --color-cta: #FF6B6B;
+  /* Coral Pink */
   --font-sans: 'Trebuchet MS', sans-serif;
   --font-serif: 'Merriweather', serif;
 }
@@ -20,7 +27,9 @@ body {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--color-text-primary);
 }
 
@@ -34,7 +43,8 @@ a {
 }
 
 footer.container {
-  width: 100%; /* Forces it to span the whole bottom */
+  width: 100%;
+  /* Forces it to span the whole bottom */
   text-align: center;
   display: flex;
   justify-content: center;
@@ -42,5 +52,6 @@ footer.container {
   padding: 1.5rem 0;
   font-size: 0.9rem;
   color: var(--color-text-secondary);
-  margin-top: auto; /* Pushes it to the absolute bottom of the flex body */
+  margin-top: auto;
+  /* Pushes it to the absolute bottom of the flex body */
 }
