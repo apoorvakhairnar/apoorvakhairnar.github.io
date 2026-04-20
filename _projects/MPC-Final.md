@@ -13,5 +13,5 @@ extra_css:
 
 **Tools:** MATLAB, Model Predictive Control (MPC), Quadprog
 
-**Link:**
+<!-- **Link:** -->
 
