@@ -30,7 +30,7 @@ extra_css:
 
     <div class="exp-entry">
       <h3>Graduate Research Assistant</h3>
-      <p><strong>Biomechanical Systems Lab, Virginia Tech</strong> — Aug 2023 – Present</p>
+      <p style="font-style: italic; font-size: 16px;">Biomechanical Systems Lab, Virginia Tech — Aug 2023 – Present</p>
       <ul>
         <li>Developing physical reservoir computing frameworks for real-time sensing of robotics and structural maintenance system</li>
         <li>Developing neuromorphic reservoir computing frameworks for real-time control of soft robotic systems</li>
@@ -39,7 +39,7 @@ extra_css:
 
     <div class="exp-entry">
       <h3 style="color: var(--color-accent);">Fluid Mechanics Tutor</h3>
-      <p><strong>Dept. of Mechanical Engineering, Virginia Tech</strong> — Sept 2022 – May 2023</p>
+      <p style="font-style: italic; font-size: 16px;">Dept. of Mechanical Engineering, Virginia Tech — Sept 2022 – May 2023</p>
       <ul>
         <li>Conducted weekly tutoring sessions for undergraduate students in Fluid Mechanics to guide them with homework and exam preparation.</li>
         <li>Reinforced core concepts through problem-solving and guided students through complex topics such as Navier-Stokes equations and boundary layer theory.</li>
@@ -48,7 +48,7 @@ extra_css:
 
     <div class="exp-entry">
       <h3>Software Developer</h3>
-      <p><strong>Siemens Technology and Services, Pune, India</strong> — Sept 2021 – June 2022</p>
+      <p style="font-style: italic; font-size: 16px;">Siemens Technology and Services, Pune, India — Sept 2021 – June 2022</p>
       <ul>
         <li>Developed software for automating Heating, Ventilation, and Air Conditioning (HVAC) systems</li>
         <li>Used C++ MFC to maintain and improve existing software</li>
