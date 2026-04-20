@@ -42,7 +42,7 @@ extra_css:
     <p><strong>Graduate Research Assistant</strong> - Biomechanical Systems Lab, VT (Aug 2023 - Present)</p>
     <p><strong style="color: var(--color-accent);">Fluid Mechanics Tutor</strong> - Dept. of Mechanical Engineering, VT (Sept 2022 - May 2023)</p>
     <p><strong>Software Developer</strong> - Siemens Technology and Services, India (Sept 2021 - June 2022)</p>
-    <!-- <a href="{{ '/pages/experience' | relative_url }}"><span>View More →</span></a> -->
+    <a href="{{ '/pages/experience/' | relative_url }}"><span>Read More →</span></a>
   </div>
 
   <div class="bento-card personal-box">

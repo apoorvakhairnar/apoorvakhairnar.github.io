@@ -27,6 +27,10 @@
     {% include nav.html %}
   </header>
 
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+    🌙
+  </button>
+
   <main class="container">
     {{ content }}
   </main>
@@ -34,5 +38,31 @@
   <footer class="container">
     <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}</p>
   </footer>
+
+  <script>
+    (function() {
+      var toggle = document.getElementById('theme-toggle');
+      var savedTheme = localStorage.getItem('theme');
+
+      // Apply saved theme on page load
+      if (savedTheme === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        toggle.textContent = '☀️';
+      }
+
+      toggle.addEventListener('click', function() {
+        var current = document.documentElement.getAttribute('data-theme');
+        if (current === 'light') {
+          document.documentElement.removeAttribute('data-theme');
+          localStorage.setItem('theme', 'dark');
+          toggle.textContent = '🌙';
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+          localStorage.setItem('theme', 'light');
+          toggle.textContent = '☀️';
+        }
+      });
+    })();
+  </script>
 </body>
 </html>

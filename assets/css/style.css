@@ -20,6 +20,19 @@
   --font-serif: 'Merriweather', serif;
 }
 
+/* =========================================
+   LIGHT MODE OVERRIDE
+   ========================================= */
+[data-theme="light"] {
+  --color-bg: #F0F4F8;            /* Cool Grey White */
+  --color-card: #FFFFFF;           /* Pure White */
+  --color-border: #D1DAE3;         /* Light Steel Border */
+  --color-text-primary: #1A202C;   /* Near-Black */
+  --color-text-secondary: #4A5568; /* Dark Slate */
+  --color-accent: #2B8A7E;         /* Deep Teal (darker for contrast on white) */
+  --color-cta: #E05252;            /* Slightly muted Coral */
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text-secondary);
@@ -54,4 +67,32 @@ footer.container {
   color: var(--color-text-secondary);
   margin-top: auto;
   /* Pushes it to the absolute bottom of the flex body */
+}
+
+/* =========================================
+   THEME TOGGLE BUTTON
+   ========================================= */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  color: var(--color-text-primary);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease, border-color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  border-color: var(--color-accent);
 }

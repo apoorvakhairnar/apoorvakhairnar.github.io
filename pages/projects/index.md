@@ -42,9 +42,9 @@ extra_css:
       display: block;
     }
     #proj-{{ forloop.index }}:checked ~ .split-view-container .project-list .proj-label-{{ forloop.index }} {
-      background: #0F1C2E;
+      background: var(--color-card);
       border-left: 4px solid var(--accent-aqua, #00E5FF);
-      color: #FFFFFF;
+      color: var(--color-text-primary);
     }
   {% endfor %}
 </style>

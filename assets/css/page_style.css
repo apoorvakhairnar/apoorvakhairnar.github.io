@@ -43,18 +43,18 @@
   cursor: pointer;
   background: rgba(15, 28, 46, 0.4);
   border-radius: 8px;
-  color: #8DA3B5;
+  color: var(--color-text-secondary);
   font-weight: 600;
   transition: all 0.2s ease;
 }
-.proj-label:hover { background: #0F1C2E; color: #FFFFFF; }
+.proj-label:hover { background: var(--color-card); color: var(--color-text-primary); }
 
 /* Right Column: Detail View */
 .project-details {
   width: 65%;
   height: 100%;
   overflow-y: auto;
-  background: #0F1C2E;
+  background: var(--color-card);
   border-radius: 12px;
   padding: 40px;
   padding-bottom: 60px;
@@ -66,8 +66,8 @@
   border-radius: 8px;
   margin-bottom: 25px;
 }
-.project-details h2 { color: #FFFFFF; }
-.project-details p { color: #8DA3B5; line-height: 1.6; }
+.project-details h2 { color: var(--color-text-primary); }
+.project-details p { color: var(--color-text-secondary); line-height: 1.6; }
 
 /* Mobile Layout */
 @media (max-width: 1024px) {
