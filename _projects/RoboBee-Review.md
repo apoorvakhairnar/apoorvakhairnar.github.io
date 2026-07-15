@@ -7,11 +7,15 @@ permalink: /pages/projects/RoboBee-Review/
 extra_css:
   - project_style.css
 ---
-**The Goal:** Provide a brief overview and discuss the progress of the RoboBee project.
+**The Goal:** Review the decade-plus history, engineering, and evolving capabilities of RoboBee — Harvard's insect-scale flapping-wing robot — from its first tethered liftoff through untethered flight.
 
-**My Role/The Solution:** Reviewed the history, working principle, manufacturing, control, applications, and limitations of RoboBee, summarizing findings in a comprehensive report.
+**My Role:** Authored a comprehensive technical review tracing the design evolution of a pioneering biomimetic microrobot, from first flight to autonomous operation.
 
-**Tools:** Literature Review, Biomimetics
+**Project Summary:**
+- Traced RoboBee's development from Harvard's 2007 meso-scale flapping-wing prototype — fabricated using Smart Composite Microstructures, a laser-machining and origami-folding technique — through 3-DOF controlled flight to its 2019 untethered "X-Wing" variant with four wings and onboard solar power.
+- Explained how the 80 mg, 3 cm-wingspan robot achieves lift-to-weight ratios above 1 using resonant piezoelectric actuation, and how adaptive control governs its roll, pitch, and yaw through differential wing-stroke amplitude.
+- Reviewed later add-ons — a vision sensor inspired by insect eyes and an electrostatic "perching" mechanism for saving energy — alongside real-world applications and limitations, from crop pollination to privacy and cost concerns.
+
+**Skills Developed:** Literature Review, Biomimetics, Technical Writing, Robotics Fundamentals
 
 **Link:** [ResearchGate Report](https://www.researchgate.net/publication/357554403_RoboBee_-_Harvard's_insect-sized_Biomimetic_Robot)
-

@@ -32,14 +32,16 @@ extra_css:
       <h3>Graduate Research Assistant</h3>
       <p style="font-style: italic; font-size: 16px;">Biomechanical Systems Lab, Virginia Tech — Aug 2023 – Present</p>
       <ul>
-        <li>Developing physical reservoir computing frameworks for real-time sensing of robotics and structural maintenance system</li>
-        <li>Developing neuromorphic reservoir computing frameworks for real-time control of soft robotic systems</li>
+        <li>Built spider-web-inspired compliant fiber network testbeds for physical reservoir computing and soft robotic sensing</li>
+        <li>Developed video-analysis pipelines to track fiber-network deformation from experimental recordings</li>
+        <li>Quantified physical reservoir performance using memory capacity and nonlinearity metrics</li>
+        <li>Fabricated hydraulic artificial muscles achieving 15% contraction with 10 mL volume change for underwater soft robots</li>
       </ul>
     </div>
 
     <div class="exp-entry">
-      <h3 style="color: var(--color-accent);">Fluid Mechanics Tutor</h3>
-      <p style="font-style: italic; font-size: 16px;">Dept. of Mechanical Engineering, Virginia Tech — Sept 2022 – May 2023</p>
+      <h3>Fluid Dynamics Tutor</h3>
+      <p style="font-style: italic; font-size: 16px;">Dept. of Mechanical Engineering, Virginia Tech — Oct 2022 – May 2023</p>
       <ul>
         <li>Conducted weekly tutoring sessions for undergraduate students in Fluid Mechanics to guide them with homework and exam preparation.</li>
         <li>Reinforced core concepts through problem-solving and guided students through complex topics such as Navier-Stokes equations and boundary layer theory.</li>
@@ -48,11 +50,39 @@ extra_css:
 
     <div class="exp-entry">
       <h3>Software Developer</h3>
-      <p style="font-style: italic; font-size: 16px;">Siemens Technology and Services, Pune, India — Sept 2021 – June 2022</p>
+      <p style="font-style: italic; font-size: 16px;">Siemens Technology and Services Pvt. Ltd., Pune, India — Aug 2021 – Jun 2022</p>
       <ul>
-        <li>Developed software for automating Heating, Ventilation, and Air Conditioning (HVAC) systems</li>
-        <li>Used C++ MFC to maintain and improve existing software</li>
+        <li>Developed a C++/MFC application for automation and configuration of HVAC control systems</li>
+        <li>Implemented and debugged engineering software workflows involving user interfaces</li>
       </ul>
+    </div>
+
+    <div class="exp-entry">
+      <h3>Systems Engineer Virtual Intern</h3>
+      <p style="font-style: italic; font-size: 16px;">Space Technology and Aeronautical Rocketry, Surat, India — Sep 2021 – Oct 2021</p>
+    </div>
+
+    <div class="exp-entry">
+      <h3>Computational Fluid Dynamics Intern</h3>
+      <p style="font-style: italic; font-size: 16px;">Intelimek Systems, Pune, India — Jun 2021 – Aug 2021</p>
+      <ul>
+        <li>Contributed to digital-twin development for fermentation and fluid-flow simulations in pharmaceutical applications</li>
+        <li>Supported workflows integrating machine learning models with CFD simulation data</li>
+      </ul>
+    </div>
+
+    <div class="exp-entry">
+      <h3>Summer Research Intern</h3>
+      <p style="font-style: italic; font-size: 16px;">Indian Institute of Technology, Kanpur, India — Aug 2020 – Oct 2020</p>
+      <ul>
+        <li>Built a transient axisymmetric nozzle-flow model in ANSYS Fluent</li>
+        <li>Visualized downstream vortex formation using time-resolved vorticity contours</li>
+      </ul>
+    </div>
+
+    <div class="exp-entry">
+      <h3>Design Trainee</h3>
+      <p style="font-style: italic; font-size: 16px;">TrumpCAD Technologies, Pune, India — May 2018 – Jul 2018</p>
     </div>
 
   </div>

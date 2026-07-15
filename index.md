@@ -56,7 +56,7 @@ extra_css:
     </ul>
   </div>
 
-  <a href="{{ '/assets/files/Apoorva_Khairnar_CV.pdf' | relative_url }}" class="bento-card cv-box">
+  <a href="{{ '/assets/files/Apoorva_Khairnar_CV_Industry_boston_v0.pdf' | relative_url }}" class="bento-card cv-box">
     <h2>Download CV</h2>
     <p>View My Full Professional Resume (PDF)</p>
   </a>

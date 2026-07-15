@@ -9,9 +9,13 @@ extra_css:
 ---
 **The Goal:** Calculate the circumference of the Earth using basic trigonometric principles and Sun angles.
 
-**My Role/The Solution:** Measured the Sun angle at two different locations (Pune and Nashik) and used the difference in angles and North-South distance to calculate the circumference, achieving 0.1% accuracy.
+**My Role:** Designed and ran a two-site field experiment measuring solar angles to derive Earth's circumference using classical trigonometric methods.
 
-**Tools:** Trigonometry, Experimental Physics
+**Project Summary:**
+- Measured solar angles simultaneously at two north-south separated locations, Pune and Nashik, to capture the angular difference caused by Earth's curvature.
+- Applied basic trigonometry, echoing Eratosthenes' classical method, to convert the angle difference and known distance into a circumference estimate.
+- Achieved a result within 0.1% of the accepted value of Earth's circumference, validating the accuracy of the simple experimental approach.
+
+**Skills Developed:** Experimental Physics, Trigonometry, Field Data Collection, Scientific Measurement
 
 <!-- **Link:** -->
-
